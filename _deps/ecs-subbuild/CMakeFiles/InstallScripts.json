@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

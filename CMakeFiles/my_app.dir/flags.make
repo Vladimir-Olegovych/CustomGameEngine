@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends
+CXX_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/_deps/ecs-src -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends
 
 CXX_FLAGS = 
 

@@ -12,13 +12,8 @@ private:
     int currentScene = -1;
     
 public:
-    Scene* getCurrentScene() {
-        if (currentScene >= 0 && currentScene < scenes.size()) {
-            return scenes[currentScene].get();
-        }
-        return nullptr;
-    }
     void addScene(std::unique_ptr<Scene> scene) {
+        scene.get()->onEnterApplication();
         scenes.push_back(std::move(scene));
     }
     
@@ -32,15 +27,22 @@ public:
         }
     }
     
-    void update() {
-        if (currentScene >= 0) scenes[currentScene]->update();
-    }
-    
-    void render() {
-        if (currentScene >= 0) scenes[currentScene]->render();
+    void update(float deltaTime) {
+        if (currentScene >= 0) scenes[currentScene]->update(deltaTime);
     }
     
     void handleInput(GLFWwindow* window) {
         if (currentScene >= 0) scenes[currentScene]->handleInput(window);
+    }
+
+    void destroyScenes() {
+        if (currentScene >= 0) scenes[currentScene]->onExit();
+        for (auto& scene : scenes) {
+            if (scene) {
+                scene->onExitApplication();
+            }
+        }
+        scenes.clear();
+        currentScene = -1;
     }
 };

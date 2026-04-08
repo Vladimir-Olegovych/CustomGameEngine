@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/CMakeFiles/ecs-populate"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/CMakeFiles/ecs-populate.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/CMakeFiles/ecs-populate-complete.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-build.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-configure.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-download.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-install.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-patch.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-test.rule"
+		},
+		{
+			"file" : "/home/vladimir/Documents/CPlus/Game/_deps/ecs-subbuild/ecs-populate-prefix/src/ecs-populate-stamp/ecs-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ecs-populate"
+		],
+		"name" : "ecs-populate"
+	}
+}

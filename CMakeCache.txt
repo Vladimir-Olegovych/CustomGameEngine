@@ -298,6 +298,10 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
+// for ecs
+FETCHCONTENT_SOURCE_DIR_ECS:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for fmt
 FETCHCONTENT_SOURCE_DIR_FMT:PATH=
 
@@ -311,6 +315,9 @@ FETCHCONTENT_SOURCE_DIR_IMGUI:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of ecs
+FETCHCONTENT_UPDATES_DISCONNECTED_ECS:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of fmt
 FETCHCONTENT_UPDATES_DISCONNECTED_FMT:BOOL=OFF

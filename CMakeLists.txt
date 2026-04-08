@@ -4,6 +4,13 @@ project(Game)
 include(FetchContent)
 
 FetchContent_Declare(
+  ecs
+  GIT_REPOSITORY https://github.com/redxdev/ECS
+  GIT_TAG 5f74e19
+)
+FetchContent_MakeAvailable(ecs)
+
+FetchContent_Declare(
   fmt
   GIT_REPOSITORY https://github.com/fmtlib/fmt
   GIT_TAG e69e5f977d458f2650bb346dadf2ad30c5320281
@@ -58,9 +65,14 @@ add_executable(my_app
     src/Scenes/MenuScene.h
     src/Core/Scenes/Scene.h
     src/Core/Scenes/SceneManager.h
+    src/ECS/Components/Position.h
+    src/ECS/Systems/DebugSystem.h
 )
 
-target_include_directories(my_app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(my_app PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ecs-src
+)
 
 if(WIN32)
     target_link_libraries(my_app 

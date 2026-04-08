@@ -88,6 +88,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "_deps/ecs-subbuild/CMakeLists.txt"
   "_deps/fmt-subbuild/CMakeLists.txt"
   "_deps/glfw-subbuild/CMakeLists.txt"
   "_deps/imgui-subbuild/CMakeLists.txt"
