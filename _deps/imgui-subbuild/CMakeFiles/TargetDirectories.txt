@@ -1,0 +1,3 @@
+/home/vladimir/Documents/CPlus/Game/_deps/imgui-subbuild/CMakeFiles/imgui-populate.dir
+/home/vladimir/Documents/CPlus/Game/_deps/imgui-subbuild/CMakeFiles/edit_cache.dir
+/home/vladimir/Documents/CPlus/Game/_deps/imgui-subbuild/CMakeFiles/rebuild_cache.dir
