@@ -24,7 +24,6 @@ class DrawSystem : public EntitySystem
     int cameraId = 0;
     void configure(World* world)
 	{
-        try {
         GLfloat vertices[] = {
             // COORDINATE / COLORS //
             -0.5f, 0.5f, 0.0f, 0.0f, 128 / 255.0f, 255 / 255.0f,
@@ -43,10 +42,6 @@ class DrawSystem : public EntitySystem
         VBO1.unbind();
         EBO1.unbind();
         glViewport(0, 0, 800, 800);
-        } catch (int e) {
-            std::cout << "ПЕРЕХВАЧЕНО ИСКЛЮЧЕНИЕ INT в configure: " << e << std::endl;
-            throw;
-        }
 	}
 
     virtual void tick(World* world, float deltaTime) override
