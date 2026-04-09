@@ -3,9 +3,15 @@ my_app: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/my_app.dir/src/main.cpp.o \
+  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o \
+  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o \
+  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o \
+  CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o \
+  CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o \
   _deps/fmt-build/libfmt.a \
   _deps/glfw-build/src/libglfw3.a \
   libimgui.a \
+  _deps/glm-build/glm/libglm.a \
   _deps/glfw-build/src/libglfw3.a \
   /usr/lib/librt.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
@@ -57,11 +63,23 @@ my_app: \
 
 CMakeFiles/my_app.dir/src/main.cpp.o:
 
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o:
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o:
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o:
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o:
+
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o:
+
 _deps/fmt-build/libfmt.a:
 
 _deps/glfw-build/src/libglfw3.a:
 
 libimgui.a:
+
+_deps/glm-build/glm/libglm.a:
 
 _deps/glfw-build/src/libglfw3.a:
 

@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named my_app
+
+# Build rule for target.
+my_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_app
+.PHONY : my_app
+
+# fast build rule for target.
+my_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/build
+.PHONY : my_app/fast
+
+#=============================================================================
 # Target rules for targets named imgui
 
 # Build rule for target.
@@ -175,17 +188,17 @@ imgui/fast:
 .PHONY : imgui/fast
 
 #=============================================================================
-# Target rules for targets named my_app
+# Target rules for targets named glm
 
 # Build rule for target.
-my_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_app
-.PHONY : my_app
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
 
 # fast build rule for target.
-my_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/build
-.PHONY : my_app/fast
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/glm-build/glm/CMakeFiles/glm.dir/build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
 
 #=============================================================================
 # Target rules for targets named fmt
@@ -394,6 +407,126 @@ _deps/imgui-src/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/_deps/imgui-src/imgui_widgets.cpp.s
 .PHONY : _deps/imgui-src/imgui_widgets.cpp.s
 
+_deps_external/glad/src/glad.o: _deps_external/glad/src/glad.c.o
+.PHONY : _deps_external/glad/src/glad.o
+
+# target to build an object file
+_deps_external/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o
+.PHONY : _deps_external/glad/src/glad.c.o
+
+_deps_external/glad/src/glad.i: _deps_external/glad/src/glad.c.i
+.PHONY : _deps_external/glad/src/glad.i
+
+# target to preprocess a source file
+_deps_external/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.i
+.PHONY : _deps_external/glad/src/glad.c.i
+
+_deps_external/glad/src/glad.s: _deps_external/glad/src/glad.c.s
+.PHONY : _deps_external/glad/src/glad.s
+
+# target to generate assembly for a file
+_deps_external/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.s
+.PHONY : _deps_external/glad/src/glad.c.s
+
+src/Core/Graphics/Shader/shader.o: src/Core/Graphics/Shader/shader.cpp.o
+.PHONY : src/Core/Graphics/Shader/shader.o
+
+# target to build an object file
+src/Core/Graphics/Shader/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
+.PHONY : src/Core/Graphics/Shader/shader.cpp.o
+
+src/Core/Graphics/Shader/shader.i: src/Core/Graphics/Shader/shader.cpp.i
+.PHONY : src/Core/Graphics/Shader/shader.i
+
+# target to preprocess a source file
+src/Core/Graphics/Shader/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.i
+.PHONY : src/Core/Graphics/Shader/shader.cpp.i
+
+src/Core/Graphics/Shader/shader.s: src/Core/Graphics/Shader/shader.cpp.s
+.PHONY : src/Core/Graphics/Shader/shader.s
+
+# target to generate assembly for a file
+src/Core/Graphics/Shader/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s
+.PHONY : src/Core/Graphics/Shader/shader.cpp.s
+
+src/Core/Graphics/Vertex/EBO.o: src/Core/Graphics/Vertex/EBO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/EBO.o
+
+# target to build an object file
+src/Core/Graphics/Vertex/EBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/EBO.cpp.o
+
+src/Core/Graphics/Vertex/EBO.i: src/Core/Graphics/Vertex/EBO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/EBO.i
+
+# target to preprocess a source file
+src/Core/Graphics/Vertex/EBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/EBO.cpp.i
+
+src/Core/Graphics/Vertex/EBO.s: src/Core/Graphics/Vertex/EBO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/EBO.s
+
+# target to generate assembly for a file
+src/Core/Graphics/Vertex/EBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/EBO.cpp.s
+
+src/Core/Graphics/Vertex/VAO.o: src/Core/Graphics/Vertex/VAO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/VAO.o
+
+# target to build an object file
+src/Core/Graphics/Vertex/VAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/VAO.cpp.o
+
+src/Core/Graphics/Vertex/VAO.i: src/Core/Graphics/Vertex/VAO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/VAO.i
+
+# target to preprocess a source file
+src/Core/Graphics/Vertex/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/VAO.cpp.i
+
+src/Core/Graphics/Vertex/VAO.s: src/Core/Graphics/Vertex/VAO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/VAO.s
+
+# target to generate assembly for a file
+src/Core/Graphics/Vertex/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/VAO.cpp.s
+
+src/Core/Graphics/Vertex/VBO.o: src/Core/Graphics/Vertex/VBO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/VBO.o
+
+# target to build an object file
+src/Core/Graphics/Vertex/VBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
+.PHONY : src/Core/Graphics/Vertex/VBO.cpp.o
+
+src/Core/Graphics/Vertex/VBO.i: src/Core/Graphics/Vertex/VBO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/VBO.i
+
+# target to preprocess a source file
+src/Core/Graphics/Vertex/VBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.i
+.PHONY : src/Core/Graphics/Vertex/VBO.cpp.i
+
+src/Core/Graphics/Vertex/VBO.s: src/Core/Graphics/Vertex/VBO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/VBO.s
+
+# target to generate assembly for a file
+src/Core/Graphics/Vertex/VBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.s
+.PHONY : src/Core/Graphics/Vertex/VBO.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -433,6 +566,7 @@ help:
 	@echo "... update_mappings"
 	@echo "... fmt"
 	@echo "... glfw"
+	@echo "... glm"
 	@echo "... imgui"
 	@echo "... my_app"
 	@echo "... _deps/imgui-src/backends/imgui_impl_glfw.o"
@@ -456,6 +590,21 @@ help:
 	@echo "... _deps/imgui-src/imgui_widgets.o"
 	@echo "... _deps/imgui-src/imgui_widgets.i"
 	@echo "... _deps/imgui-src/imgui_widgets.s"
+	@echo "... _deps_external/glad/src/glad.o"
+	@echo "... _deps_external/glad/src/glad.i"
+	@echo "... _deps_external/glad/src/glad.s"
+	@echo "... src/Core/Graphics/Shader/shader.o"
+	@echo "... src/Core/Graphics/Shader/shader.i"
+	@echo "... src/Core/Graphics/Shader/shader.s"
+	@echo "... src/Core/Graphics/Vertex/EBO.o"
+	@echo "... src/Core/Graphics/Vertex/EBO.i"
+	@echo "... src/Core/Graphics/Vertex/EBO.s"
+	@echo "... src/Core/Graphics/Vertex/VAO.o"
+	@echo "... src/Core/Graphics/Vertex/VAO.i"
+	@echo "... src/Core/Graphics/Vertex/VAO.s"
+	@echo "... src/Core/Graphics/Vertex/VBO.o"
+	@echo "... src/Core/Graphics/Vertex/VBO.i"
+	@echo "... src/Core/Graphics/Vertex/VBO.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

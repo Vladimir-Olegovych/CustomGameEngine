@@ -1,3 +1,4 @@
+#include "glad/glad.h"
 #include <GLFW/glfw3.h>
 #include <Core/Scenes/SceneManager.h>
 #include <Scenes/MenuScene.h>
@@ -11,20 +12,24 @@
 
 int main() {
     if (!glfwInit()) return -1;
-    
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Scene Demo", nullptr, nullptr);
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    GLFWwindow* window = glfwCreateWindow(800, 800, "Scene Demo", nullptr, nullptr);
     if (!window) { glfwTerminate(); return -1; }
     glfwMakeContextCurrent(window);
     glfwSwapInterval(0);
-    glViewport(0, 0, 400, 400);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-    glOrtho(0.0, 400.0, 0.0, 400.0, 0.0, 1.0);
-
+        if (!gladLoadGL()) {
+        glfwDestroyWindow(window);
+        glfwTerminate();
+        return -1;
+    }
     GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode* mode = glfwGetVideoMode(monitor);
     float refreshHz = mode->refreshRate;
     const float FIXED_DT = 1.0f / refreshHz;
+
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;

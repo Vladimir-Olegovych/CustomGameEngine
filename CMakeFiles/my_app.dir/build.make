@@ -86,26 +86,107 @@ CMakeFiles/my_app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vladimir/Documents/CPlus/Game/src/main.cpp -o CMakeFiles/my_app.dir/src/main.cpp.s
 
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o: src/Core/Graphics/Vertex/EBO.cpp
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o -MF CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o.d -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o -c /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/EBO.cpp
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/EBO.cpp > CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.i
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/EBO.cpp -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.s
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o: src/Core/Graphics/Vertex/VBO.cpp
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o -MF CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o.d -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o -c /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VBO.cpp
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VBO.cpp > CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.i
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VBO.cpp -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.s
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o: src/Core/Graphics/Vertex/VAO.cpp
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o -MF CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o.d -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o -c /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VAO.cpp
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VAO.cpp > CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.i
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VAO.cpp -o CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.s
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o: src/Core/Graphics/Shader/shader.cpp
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o -MF CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o.d -o CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o -c /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Shader/shader.cpp
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Shader/shader.cpp > CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.i
+
+CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Shader/shader.cpp -o CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s
+
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o: CMakeFiles/my_app.dir/flags.make
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o: _deps_external/glad/src/glad.c
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o: CMakeFiles/my_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o -MF CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o.d -o CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o -c /home/vladimir/Documents/CPlus/Game/_deps_external/glad/src/glad.c
+
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vladimir/Documents/CPlus/Game/_deps_external/glad/src/glad.c > CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.i
+
+CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vladimir/Documents/CPlus/Game/_deps_external/glad/src/glad.c -o CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.s
+
 # Object files for target my_app
 my_app_OBJECTS = \
-"CMakeFiles/my_app.dir/src/main.cpp.o"
+"CMakeFiles/my_app.dir/src/main.cpp.o" \
+"CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o" \
+"CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o" \
+"CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o" \
+"CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o" \
+"CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o"
 
 # External object files for target my_app
 my_app_EXTERNAL_OBJECTS =
 
 my_app: CMakeFiles/my_app.dir/src/main.cpp.o
+my_app: CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
+my_app: CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
+my_app: CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
+my_app: CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
+my_app: CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o
 my_app: CMakeFiles/my_app.dir/build.make
 my_app: CMakeFiles/my_app.dir/compiler_depend.ts
 my_app: _deps/fmt-build/libfmt.a
 my_app: _deps/glfw-build/src/libglfw3.a
 my_app: libimgui.a
+my_app: _deps/glm-build/glm/libglm.a
 my_app: _deps/glfw-build/src/libglfw3.a
 my_app: /usr/lib/librt.a
 my_app: /usr/lib/libm.so
 my_app: /usr/lib/libGLX.so
 my_app: /usr/lib/libOpenGL.so
 my_app: CMakeFiles/my_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable my_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vladimir/Documents/CPlus/Game/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable my_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

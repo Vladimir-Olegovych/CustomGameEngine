@@ -19,6 +19,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/glfw-src/CMake/glfw3Config.cmake.in"
   "_deps/glfw-src/CMakeLists.txt"
   "_deps/glfw-src/src/CMakeLists.txt"
+  "_deps/glm-src/CMakeLists.txt"
+  "_deps/glm-src/glm/CMakeLists.txt"
   "/usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
@@ -88,11 +90,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "_deps/glm-subbuild/CMakeLists.txt"
   "_deps/ecs-subbuild/CMakeLists.txt"
   "_deps/fmt-subbuild/CMakeLists.txt"
   "_deps/glfw-subbuild/CMakeLists.txt"
   "_deps/imgui-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/glm-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/glm-build/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/fmt-build/fmt-config-version.cmake"
   "_deps/fmt-build/fmt.pc"
   "_deps/fmt-build/fmt-config.cmake"
@@ -106,8 +111,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/imgui.dir/DependInfo.cmake"
   "CMakeFiles/my_app.dir/DependInfo.cmake"
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
+  "_deps/glm-build/glm/CMakeFiles/glm.dir/DependInfo.cmake"
   "_deps/fmt-build/CMakeFiles/fmt.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"

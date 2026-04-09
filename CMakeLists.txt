@@ -2,6 +2,22 @@ cmake_minimum_required(VERSION 3.11)
 project(Game)
 
 include(FetchContent)
+#Application
+add_executable(my_app 
+  src/main.cpp
+  src/Core/Graphics/Vertex/EBO.cpp
+  src/Core/Graphics/Vertex/VBO.cpp
+  src/Core/Graphics/Vertex/VAO.cpp
+  src/Core/Graphics/Shader/shader.cpp
+  _deps_external/glad/src/glad.c
+)
+#Downloads
+FetchContent_Declare(
+  glm
+  GIT_REPOSITORY https://github.com/g-truc/glm.git
+  GIT_TAG 1.0.1
+)
+FetchContent_MakeAvailable(glm)
 
 FetchContent_Declare(
   ecs
@@ -22,15 +38,7 @@ FetchContent_Declare(
   GIT_REPOSITORY https://github.com/glfw/glfw.git
   GIT_TAG 3.4
 )
-
-set(GLFW_BUILD_DOCS OFF CACHE BOOL "")
-set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "")
-set(GLFW_BUILD_TESTS OFF CACHE BOOL "")
-set(GLFW_INSTALL OFF CACHE BOOL "")
-
 FetchContent_MakeAvailable(glfw)
-
-target_include_directories(glfw INTERFACE ${glfw_SOURCE_DIR}/include)
 
 FetchContent_Declare(
   imgui
@@ -38,6 +46,11 @@ FetchContent_Declare(
   GIT_TAG v1.90.8-docking
 )
 FetchContent_MakeAvailable(imgui)
+#Constants
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "")
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "")
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "")
+set(GLFW_INSTALL OFF CACHE BOOL "")
 
 set(IMGUI_SOURCES
   ${imgui_SOURCE_DIR}/imgui.cpp
@@ -48,50 +61,36 @@ set(IMGUI_SOURCES
   ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
   ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
 )
+#IncludeLibrary
+find_package(OpenGL REQUIRED)
 
 add_library(imgui STATIC ${IMGUI_SOURCES})
 
-target_include_directories(imgui PUBLIC
-  ${imgui_SOURCE_DIR}
+target_include_directories(imgui PUBLIC 
+  ${imgui_SOURCE_DIR} 
   ${imgui_SOURCE_DIR}/backends
 )
-
-target_link_libraries(imgui PUBLIC glfw OpenGL::GL)
-
-find_package(OpenGL REQUIRED)
-
-add_executable(my_app 
-    src/main.cpp
-    src/Scenes/MenuScene.h
-    src/Core/Scenes/Scene.h
-    src/Core/Scenes/SceneManager.h
-    src/ECS/Components/Position.h
-    src/ECS/Systems/DebugSystem.h
+target_include_directories(glfw INTERFACE 
+  ${glfw_SOURCE_DIR}/include
 )
 
 target_include_directories(my_app PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
-    ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ecs-src
+  ${CMAKE_CURRENT_SOURCE_DIR}/src
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ecs-src
+  ${CMAKE_CURRENT_SOURCE_DIR}/_deps_external/glad/include
+)
+#LinkLibrary
+target_link_libraries(imgui PUBLIC glfw OpenGL::GL)
+
+target_link_libraries(my_app PRIVATE
+  fmt::fmt
+  glfw
+  imgui
+  OpenGL::GL
+  glm::glm
 )
 
 if(WIN32)
-    target_link_libraries(my_app 
-        PRIVATE 
-            fmt::fmt
-            glfw
-            imgui
-            OpenGL::GL
-            gdi32
-            user32
-            shell32
-            kernel32
-    )
-else()
-    target_link_libraries(my_app 
-        PRIVATE 
-            fmt::fmt
-            glfw
-            imgui
-            OpenGL::GL
-    )
+  target_link_libraries(my_app PRIVATE gdi32 user32 shell32 kernel32)
 endif()
