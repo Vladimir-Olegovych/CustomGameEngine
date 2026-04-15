@@ -9,6 +9,7 @@ add_executable(my_app
   src/Core/Graphics/Vertex/VBO.cpp
   src/Core/Graphics/Vertex/VAO.cpp
   src/Core/Graphics/Shader/shader.cpp
+  src/Core/Graphics/Texture/texture.cpp
   _deps_external/glad/src/glad.c
 )
 #Downloads
@@ -46,6 +47,14 @@ FetchContent_Declare(
   GIT_TAG v1.90.8-docking
 )
 FetchContent_MakeAvailable(imgui)
+
+FetchContent_Declare(
+  stb
+  GIT_REPOSITORY https://github.com/nothings/stb.git
+  GIT_TAG master
+  SOURCE_SUBDIR .
+)
+FetchContent_MakeAvailable(stb)
 #Constants
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "")
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "")
@@ -61,8 +70,14 @@ set(IMGUI_SOURCES
   ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
   ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
 )
+
+set(STB_IMPL_FILE ${CMAKE_CURRENT_SOURCE_DIR}/_deps_external/stb_image/src/stb_image_impl.c)
+file(WRITE ${STB_IMPL_FILE} "#define STB_IMAGE_IMPLEMENTATION\n#include <stb_image.h>\n")
 #IncludeLibrary
 find_package(OpenGL REQUIRED)
+
+add_library(stb_image STATIC ${STB_IMPL_FILE})
+target_include_directories(stb_image PUBLIC ${stb_SOURCE_DIR})
 
 add_library(imgui STATIC ${IMGUI_SOURCES})
 
@@ -79,6 +94,7 @@ target_include_directories(my_app PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${CMAKE_CURRENT_SOURCE_DIR}/_deps/ecs-src
   ${CMAKE_CURRENT_SOURCE_DIR}/_deps_external/glad/include
+  ${stb_SOURCE_DIR}
 )
 #LinkLibrary
 target_link_libraries(imgui PUBLIC glfw OpenGL::GL)
@@ -89,6 +105,7 @@ target_link_libraries(my_app PRIVATE
   imgui
   OpenGL::GL
   glm::glm
+  stb_image
 )
 
 if(WIN32)

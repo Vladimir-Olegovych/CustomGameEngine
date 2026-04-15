@@ -95,6 +95,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/fmt-subbuild/CMakeLists.txt"
   "_deps/glfw-subbuild/CMakeLists.txt"
   "_deps/imgui-subbuild/CMakeLists.txt"
+  "_deps/stb-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glm-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glm-build/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -112,6 +113,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/my_app.dir/DependInfo.cmake"
+  "CMakeFiles/stb_image.dir/DependInfo.cmake"
   "CMakeFiles/imgui.dir/DependInfo.cmake"
   "_deps/glm-build/glm/CMakeFiles/glm.dir/DependInfo.cmake"
   "_deps/fmt-build/CMakeFiles/fmt.dir/DependInfo.cmake"

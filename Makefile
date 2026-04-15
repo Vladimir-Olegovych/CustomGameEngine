@@ -175,6 +175,19 @@ my_app/fast:
 .PHONY : my_app/fast
 
 #=============================================================================
+# Target rules for targets named stb_image
+
+# Build rule for target.
+stb_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
+.PHONY : stb_image
+
+# fast build rule for target.
+stb_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/build
+.PHONY : stb_image/fast
+
+#=============================================================================
 # Target rules for targets named imgui
 
 # Build rule for target.
@@ -431,6 +444,30 @@ _deps_external/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.s
 .PHONY : _deps_external/glad/src/glad.c.s
 
+_deps_external/stb_image/src/stb_image_impl.o: _deps_external/stb_image/src/stb_image_impl.c.o
+.PHONY : _deps_external/stb_image/src/stb_image_impl.o
+
+# target to build an object file
+_deps_external/stb_image/src/stb_image_impl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/_deps_external/stb_image/src/stb_image_impl.c.o
+.PHONY : _deps_external/stb_image/src/stb_image_impl.c.o
+
+_deps_external/stb_image/src/stb_image_impl.i: _deps_external/stb_image/src/stb_image_impl.c.i
+.PHONY : _deps_external/stb_image/src/stb_image_impl.i
+
+# target to preprocess a source file
+_deps_external/stb_image/src/stb_image_impl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/_deps_external/stb_image/src/stb_image_impl.c.i
+.PHONY : _deps_external/stb_image/src/stb_image_impl.c.i
+
+_deps_external/stb_image/src/stb_image_impl.s: _deps_external/stb_image/src/stb_image_impl.c.s
+.PHONY : _deps_external/stb_image/src/stb_image_impl.s
+
+# target to generate assembly for a file
+_deps_external/stb_image/src/stb_image_impl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/_deps_external/stb_image/src/stb_image_impl.c.s
+.PHONY : _deps_external/stb_image/src/stb_image_impl.c.s
+
 src/Core/Graphics/Shader/shader.o: src/Core/Graphics/Shader/shader.cpp.o
 .PHONY : src/Core/Graphics/Shader/shader.o
 
@@ -454,6 +491,30 @@ src/Core/Graphics/Shader/shader.s: src/Core/Graphics/Shader/shader.cpp.s
 src/Core/Graphics/Shader/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s
 .PHONY : src/Core/Graphics/Shader/shader.cpp.s
+
+src/Core/Graphics/Texture/texture.o: src/Core/Graphics/Texture/texture.cpp.o
+.PHONY : src/Core/Graphics/Texture/texture.o
+
+# target to build an object file
+src/Core/Graphics/Texture/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o
+.PHONY : src/Core/Graphics/Texture/texture.cpp.o
+
+src/Core/Graphics/Texture/texture.i: src/Core/Graphics/Texture/texture.cpp.i
+.PHONY : src/Core/Graphics/Texture/texture.i
+
+# target to preprocess a source file
+src/Core/Graphics/Texture/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.i
+.PHONY : src/Core/Graphics/Texture/texture.cpp.i
+
+src/Core/Graphics/Texture/texture.s: src/Core/Graphics/Texture/texture.cpp.s
+.PHONY : src/Core/Graphics/Texture/texture.s
+
+# target to generate assembly for a file
+src/Core/Graphics/Texture/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.s
+.PHONY : src/Core/Graphics/Texture/texture.cpp.s
 
 src/Core/Graphics/Vertex/EBO.o: src/Core/Graphics/Vertex/EBO.cpp.o
 .PHONY : src/Core/Graphics/Vertex/EBO.o
@@ -569,6 +630,7 @@ help:
 	@echo "... glm"
 	@echo "... imgui"
 	@echo "... my_app"
+	@echo "... stb_image"
 	@echo "... _deps/imgui-src/backends/imgui_impl_glfw.o"
 	@echo "... _deps/imgui-src/backends/imgui_impl_glfw.i"
 	@echo "... _deps/imgui-src/backends/imgui_impl_glfw.s"
@@ -593,9 +655,15 @@ help:
 	@echo "... _deps_external/glad/src/glad.o"
 	@echo "... _deps_external/glad/src/glad.i"
 	@echo "... _deps_external/glad/src/glad.s"
+	@echo "... _deps_external/stb_image/src/stb_image_impl.o"
+	@echo "... _deps_external/stb_image/src/stb_image_impl.i"
+	@echo "... _deps_external/stb_image/src/stb_image_impl.s"
 	@echo "... src/Core/Graphics/Shader/shader.o"
 	@echo "... src/Core/Graphics/Shader/shader.i"
 	@echo "... src/Core/Graphics/Shader/shader.s"
+	@echo "... src/Core/Graphics/Texture/texture.o"
+	@echo "... src/Core/Graphics/Texture/texture.i"
+	@echo "... src/Core/Graphics/Texture/texture.s"
 	@echo "... src/Core/Graphics/Vertex/EBO.o"
 	@echo "... src/Core/Graphics/Vertex/EBO.i"
 	@echo "... src/Core/Graphics/Vertex/EBO.s"

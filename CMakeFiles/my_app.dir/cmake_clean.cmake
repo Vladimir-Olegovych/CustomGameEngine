@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o.d"
   "CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o"
   "CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o.d"
+  "CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o"
+  "CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o.d"
   "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o"
   "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o.d"
   "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o"

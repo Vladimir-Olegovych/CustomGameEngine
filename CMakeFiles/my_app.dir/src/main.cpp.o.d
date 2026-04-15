@@ -204,6 +204,10 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /home/vladimir/Documents/CPlus/Game/include/texture.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h \
+ /home/vladimir/Documents/CPlus/Game/include/shader.h \
  /home/vladimir/Documents/CPlus/Game/include/EBO.h \
  /home/vladimir/Documents/CPlus/Game/include/VAO.h \
  /home/vladimir/Documents/CPlus/Game/include/VBO.h \

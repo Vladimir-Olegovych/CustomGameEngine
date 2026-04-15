@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/include -I/home/vladimir/Documents/CPlus/Game/_deps/ecs-src -I/home/vladimir/Documents/CPlus/Game/_deps_external/glad/include -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends -I/home/vladimir/Documents/CPlus/Game/_deps/glm-src
+C_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/include -I/home/vladimir/Documents/CPlus/Game/_deps/ecs-src -I/home/vladimir/Documents/CPlus/Game/_deps_external/glad/include -I/home/vladimir/Documents/CPlus/Game/_deps/stb-src -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends -I/home/vladimir/Documents/CPlus/Game/_deps/glm-src
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/include -I/home/vladimir/Documents/CPlus/Game/_deps/ecs-src -I/home/vladimir/Documents/CPlus/Game/_deps_external/glad/include -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends -I/home/vladimir/Documents/CPlus/Game/_deps/glm-src
+CXX_INCLUDES = -I/home/vladimir/Documents/CPlus/Game/src -I/home/vladimir/Documents/CPlus/Game/include -I/home/vladimir/Documents/CPlus/Game/_deps/ecs-src -I/home/vladimir/Documents/CPlus/Game/_deps_external/glad/include -I/home/vladimir/Documents/CPlus/Game/_deps/stb-src -I/home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src -I/home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends -I/home/vladimir/Documents/CPlus/Game/_deps/glm-src
 
 CXX_FLAGS = 
 

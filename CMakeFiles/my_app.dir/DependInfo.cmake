@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vladimir/Documents/CPlus/Game/_deps_external/glad/src/glad.c" "CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o" "gcc" "CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o.d"
   "/home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Shader/shader.cpp" "CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o.d"
+  "/home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/texture.cpp" "CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o.d"
   "/home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/EBO.cpp" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o.d"
   "/home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VAO.cpp" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o.d"
   "/home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VBO.cpp" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o" "gcc" "CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o.d"
