@@ -198,21 +198,15 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_glfw.h \
  /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_opengl3.h \
  /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h \
+ /home/vladimir/Documents/CPlus/Game/include/texture.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h \
  /home/vladimir/Documents/CPlus/Game/include/shader.h \
  /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
- /home/vladimir/Documents/CPlus/Game/include/texture.h \
- /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
- /usr/include/c++/15.2.1/stdlib.h \
- /home/vladimir/Documents/CPlus/Game/include/shader.h \
- /home/vladimir/Documents/CPlus/Game/include/EBO.h \
- /home/vladimir/Documents/CPlus/Game/include/VAO.h \
- /home/vladimir/Documents/CPlus/Game/include/VBO.h \
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h \
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Camera.h \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/glm.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath /usr/include/math.h \
@@ -381,19 +375,66 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_half.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/integer.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/func_integer.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/quaternion.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_common.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_common.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_float.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_double.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_double_precision.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_trigonometric.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/quaternion_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/quaternion.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/epsilon.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../detail/setup.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/epsilon.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/vec1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_bool1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_float1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_double1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_int1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
+ /usr/include/c++/15.2.1/cstring \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.inl \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h \
+ /home/vladimir/Documents/CPlus/Game/include/shader.h \
+ /home/vladimir/Documents/CPlus/Game/include/VAO.h \
+ /home/vladimir/Documents/CPlus/Game/include/VBO.h \
+ /home/vladimir/Documents/CPlus/Game/include/EBO.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h \
  /usr/include/c++/15.2.1/thread /usr/include/c++/15.2.1/bits/std_thread.h \
  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
  /usr/include/c++/15.2.1/bits/chrono.h /usr/include/c++/15.2.1/ratio \

@@ -8,8 +8,6 @@
 #include <imgui_impl_opengl3.h>
 
 #include <ECS/Systems/DrawSystem.h>
-
-#include <ECS/Components/Camera.h>
 #include <ECS/Components/Position.h>
 
 using namespace ECS;
@@ -22,18 +20,8 @@ class MenuScene : public Scene {
     void onEnterApplication() override {
         world = World::createWorld();
 
-        Entity* c_ent = world->create();
-        c_ent->assign<Camera>();
-
         DrawSystem* drawSystem = new DrawSystem();
-        drawSystem->cameraId = c_ent->getEntityId();
         world->registerSystem(drawSystem);
-
-        for(int i = 2; i < 15; i++){
-            Entity* ent = world->create();
-            ent->assign<Position>(0.f + i * 20, 0.f, 0.f);
-        }
-        
     }
 
     void onExitApplication() override {

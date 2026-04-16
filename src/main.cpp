@@ -2,6 +2,7 @@
 #include <GLFW/glfw3.h>
 #include <Core/Scenes/SceneManager.h>
 #include <Scenes/MenuScene.h>
+#include <Core/Graphics/Texture/AssetManager.h>
 
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -40,6 +41,11 @@ int main() {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 330");
     
+    AssetManager& assetManager = AssetManager::getInstance();
+
+    assetManager.loadTexture("gravel", "resources/textures/gravel_001_basecolor.jpg");
+    assetManager.loadTexture("wall", "resources/textures/concrete_wall_016_basecolor.png");
+
     SceneManager sceneManager;
     sceneManager.addScene(std::make_unique<MenuScene>());
     sceneManager.setScene(0);
@@ -75,6 +81,8 @@ int main() {
     }
     
     sceneManager.destroyScenes();
+
+    assetManager.clear();
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
