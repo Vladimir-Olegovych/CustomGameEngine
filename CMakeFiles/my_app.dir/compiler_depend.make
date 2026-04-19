@@ -1051,6 +1051,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o: src/Core/Graphics/Vert
 
 CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/ecs-src/ECS.h \
+  _deps/fmt-src/include/fmt/core.h \
   _deps/glfw-src/include/GLFW/glfw3.h \
   _deps/glm-src/glm/detail/type_mat2x3.hpp \
   _deps/glm-src/glm/detail/type_mat2x3.inl \
@@ -1186,6 +1187,17 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/glm-src/glm/fwd.hpp \
   _deps/glm-src/glm/glm.hpp \
   _deps/glm-src/glm/detail/setup.hpp \
+  _deps/glm-src/glm/ext/scalar_constants.hpp \
+  _deps/glm-src/glm/ext/scalar_constants.inl \
+  _deps/glm-src/glm/gtc/constants.hpp \
+  _deps/glm-src/glm/gtc/constants.inl \
+  _deps/glm-src/glm/ext/matrix_clip_space.hpp \
+  _deps/glm-src/glm/ext/matrix_clip_space.inl \
+  _deps/glm-src/glm/ext/matrix_projection.hpp \
+  _deps/glm-src/glm/ext/matrix_projection.inl \
+  _deps/glm-src/glm/ext/matrix_transform.hpp \
+  _deps/glm-src/glm/ext/matrix_transform.inl \
+  _deps/glm-src/glm/detail/setup.hpp \
   _deps/glm-src/glm/ext/quaternion_relational.hpp \
   _deps/glm-src/glm/ext/quaternion_relational.inl \
   _deps/glm-src/glm/detail/setup.hpp \
@@ -1216,24 +1228,13 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/glm-src/glm/ext/vector_relational.inl \
   _deps/glm-src/glm/ext/vector_uint1.hpp \
   _deps/glm-src/glm/ext/vector_uint1_sized.hpp \
-  _deps/glm-src/glm/detail/setup.hpp \
-  _deps/glm-src/glm/ext/matrix_clip_space.hpp \
-  _deps/glm-src/glm/ext/matrix_clip_space.inl \
-  _deps/glm-src/glm/ext/matrix_projection.hpp \
-  _deps/glm-src/glm/ext/matrix_projection.inl \
-  _deps/glm-src/glm/ext/matrix_transform.hpp \
-  _deps/glm-src/glm/ext/matrix_transform.inl \
-  _deps/glm-src/glm/ext/scalar_constants.hpp \
-  _deps/glm-src/glm/ext/scalar_constants.inl \
-  _deps/glm-src/glm/gtc/constants.hpp \
-  _deps/glm-src/glm/gtc/constants.inl \
-  _deps/glm-src/glm/gtc/matrix_transform.hpp \
-  _deps/glm-src/glm/gtc/matrix_transform.inl \
   _deps/glm-src/glm/gtc/epsilon.hpp \
   _deps/glm-src/glm/gtc/epsilon.inl \
   _deps/glm-src/glm/gtc/quaternion.hpp \
   _deps/glm-src/glm/gtc/quaternion.inl \
   _deps/glm-src/glm/gtc/vec1.hpp \
+  _deps/glm-src/glm/gtc/matrix_transform.hpp \
+  _deps/glm-src/glm/gtc/matrix_transform.inl \
   _deps/glm-src/glm/gtc/type_ptr.hpp \
   _deps/glm-src/glm/gtc/type_ptr.inl \
   _deps/glm-src/glm/integer.hpp \
@@ -1258,8 +1259,10 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   src/Core/Graphics/Draw/Camera.h \
   src/Core/Graphics/Draw/SpriteBatch.h \
   src/Core/Graphics/Texture/AssetManager.h \
+  src/Core/Player/PlayerInput.h \
   src/Core/Scenes/Scene.h \
   src/Core/Scenes/SceneManager.h \
+  src/ECS/Components/Context.h \
   src/ECS/Components/Position.h \
   src/ECS/Systems/DrawSystem.h \
   src/Scenes/MenuScene.h \
@@ -1370,7 +1373,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
-  /usr/include/c++/15.2.1/bits/chrono.h \
   /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
@@ -1404,7 +1406,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/ostream.h \
   /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
-  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -1418,7 +1419,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/std_function.h \
-  /usr/include/c++/15.2.1/bits/std_thread.h \
   /usr/include/c++/15.2.1/bits/stl_algo.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
   /usr/include/c++/15.2.1/bits/stl_bvector.h \
@@ -1433,11 +1433,11 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/stl_vector.h \
+  /usr/include/c++/15.2.1/bits/stream_iterator.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
-  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
   /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/unordered_map.h \
@@ -1450,7 +1450,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
   /usr/include/c++/15.2.1/cfloat \
-  /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
@@ -1461,7 +1460,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
   /usr/include/c++/15.2.1/cstring \
-  /usr/include/c++/15.2.1/ctime \
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
@@ -1481,6 +1479,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/iosfwd \
   /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
+  /usr/include/c++/15.2.1/iterator \
   /usr/include/c++/15.2.1/limits \
   /usr/include/c++/15.2.1/memory \
   /usr/include/c++/15.2.1/new \
@@ -1489,7 +1488,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/stdlib.h \
@@ -1497,7 +1495,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/system_error \
-  /usr/include/c++/15.2.1/thread \
   /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
   /usr/include/c++/15.2.1/tr1/beta_function.tcc \
   /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
@@ -1627,10 +1624,6 @@ CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o:
 
 /usr/lib32/libXdmcp.so.6:
 
-/usr/lib32/libXau.so.6:
-
-/usr/lib32/libGLdispatch.so.0:
-
 /usr/include/asm-generic/int-ll64.h:
 
 _deps/glm-src/glm/ext/vector_int2_sized.hpp:
@@ -1735,6 +1728,8 @@ _deps/glm-src/glm/ext/vector_uint2.hpp:
 
 _deps/glm-src/glm/ext/vector_float4_precision.hpp:
 
+_deps/glm-src/glm/ext/vector_float4.hpp:
+
 _deps/glm-src/glm/mat3x3.hpp:
 
 /usr/include/c++/15.2.1/bits/move.h:
@@ -1784,6 +1779,8 @@ _deps/glm-src/glm/ext/vector_bool2.hpp:
 _deps/glm-src/glm/ext/vector_double4.hpp:
 
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/15.2.1/iterator:
 
 _deps/glm-src/glm/ext/matrix_double2x2_precision.hpp:
 
@@ -1875,8 +1872,6 @@ _deps/imgui-src/imconfig.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
-/usr/include/c++/15.2.1/bits/std_thread.h:
-
 /usr/include/bits/types/locale_t.h:
 
 /usr/include/bits/uintn-identity.h:
@@ -1955,9 +1950,9 @@ _deps/glm-src/glm/ext/matrix_transform.inl:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
-/usr/include/c++/15.2.1/ratio:
-
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/features.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
@@ -2002,6 +1997,8 @@ _deps/glm-src/glm/ext/vector_bool4.hpp:
 /usr/include/bits/libc-header-start.h:
 
 _deps/glm-src/glm/ext/matrix_float2x3.hpp:
+
+_deps/glm-src/glm/ext/quaternion_geometric.inl:
 
 /usr/include/c++/15.2.1/backward/binders.h:
 
@@ -2078,6 +2075,8 @@ _deps/glm-src/glm/ext/quaternion_relational.hpp:
 _deps/glm-src/glm/detail/type_mat4x3.hpp:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
+
+src/Core/Player/PlayerInput.h:
 
 _deps/glm-src/glm/ext/quaternion_common.inl:
 
@@ -2225,8 +2224,6 @@ _deps/glm-src/glm/ext/matrix_float3x2.hpp:
 
 _deps/glm-src/glm/ext/matrix_float3x2_precision.hpp:
 
-/usr/include/c++/15.2.1/bits/chrono.h:
-
 /usr/include/sys/select.h:
 
 /usr/include/c++/15.2.1/bits/stl_function.h:
@@ -2308,8 +2305,6 @@ _deps/glm-src/glm/mat2x2.hpp:
 /usr/include/bits/setjmp.h:
 
 /usr/include/bits/timex.h:
-
-/usr/include/c++/15.2.1/ctime:
 
 /usr/include/bits/types/error_t.h:
 
@@ -2447,10 +2442,6 @@ src/main.cpp:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/features.h:
-
-/usr/include/c++/15.2.1/chrono:
-
 CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
@@ -2517,10 +2508,6 @@ _deps/glm-src/glm/ext/matrix_projection.inl:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
-_deps/glm-src/glm/ext/quaternion_geometric.inl:
-
-/usr/include/c++/15.2.1/bits/this_thread_sleep.h:
-
 /usr/include/c++/15.2.1/fstream:
 
 /usr/include/c++/15.2.1/initializer_list:
@@ -2566,8 +2553,6 @@ _deps/glm-src/glm/ext/quaternion_geometric.inl:
 /usr/include/c++/15.2.1/typeinfo:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 _deps/glm-src/glm/integer.hpp:
 
@@ -2623,6 +2608,8 @@ src/Core/Graphics/Vertex/VBO.cpp:
 
 _deps/ecs-src/ECS.h:
 
+_deps/fmt-src/include/fmt/core.h:
+
 _deps/glfw-src/include/GLFW/glfw3.h:
 
 _deps/imgui-src/backends/imgui_impl_glfw.h:
@@ -2659,6 +2646,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o:
 
 /usr/include/c++/15.2.1/backward/auto_ptr.h:
 
+/usr/include/c++/15.2.1/bits/stream_iterator.h:
+
 /usr/include/c++/15.2.1/bits/allocated_ptr.h:
 
 /usr/include/c++/15.2.1/bits/atomic_base.h:
@@ -2677,6 +2666,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o:
 
 /usr/include/c++/15.2.1/functional:
 
+src/ECS/Components/Context.h:
+
 /usr/include/c++/15.2.1/memory:
 
 _deps/glm-src/glm/gtc/type_ptr.hpp:
@@ -2686,10 +2677,6 @@ _deps/glm-src/glm/ext/vector_int3_sized.hpp:
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
-
-_deps/glm-src/glm/ext/vector_float4.hpp:
-
-/usr/include/c++/15.2.1/thread:
 
 /usr/include/c++/15.2.1/typeindex:
 
@@ -2726,3 +2713,7 @@ libimgui.a:
 /usr/include/linux/stddef.h:
 
 /usr/lib/libmvec.so.1:
+
+/usr/lib32/libGLdispatch.so.0:
+
+/usr/lib32/libXau.so.6:

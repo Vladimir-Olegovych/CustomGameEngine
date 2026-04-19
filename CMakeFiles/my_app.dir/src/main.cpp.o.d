@@ -15,35 +15,46 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/bits/stdint-least.h \
  /home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h \
- /usr/include/c++/15.2.1/iostream \
- /usr/include/c++/15.2.1/bits/requires_hosted.h \
+ /home/vladimir/Documents/CPlus/Game/src/Scenes/MenuScene.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include/fmt/core.h \
+ /usr/include/c++/15.2.1/cstddef \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.2.1/pstl/pstl_config.h \
- /usr/include/c++/15.2.1/ostream /usr/include/c++/15.2.1/bits/ostream.h \
- /usr/include/c++/15.2.1/ios /usr/include/c++/15.2.1/iosfwd \
+ /usr/include/c++/15.2.1/bits/version.h /usr/include/c++/15.2.1/cstdio \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/c++/15.2.1/cstring \
+ /usr/include/string.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
+ /usr/include/c++/15.2.1/iterator \
+ /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/15.2.1/type_traits \
+ /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/15.2.1/bits/concept_check.h \
+ /usr/include/c++/15.2.1/debug/assertions.h \
+ /usr/include/c++/15.2.1/bits/stl_iterator.h \
+ /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/15.2.1/ext/type_traits.h \
+ /usr/include/c++/15.2.1/bits/move.h \
+ /usr/include/c++/15.2.1/bits/ptr_traits.h \
+ /usr/include/c++/15.2.1/bits/stream_iterator.h \
+ /usr/include/c++/15.2.1/iosfwd \
+ /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/bits/stringfwd.h \
  /usr/include/c++/15.2.1/bits/memoryfwd.h \
  /usr/include/c++/15.2.1/bits/postypes.h /usr/include/c++/15.2.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/c++/15.2.1/exception \
- /usr/include/c++/15.2.1/bits/exception.h \
- /usr/include/c++/15.2.1/bits/version.h \
- /usr/include/c++/15.2.1/bits/exception_ptr.h \
- /usr/include/c++/15.2.1/bits/exception_defines.h \
- /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
- /usr/include/c++/15.2.1/typeinfo \
- /usr/include/c++/15.2.1/bits/hash_bytes.h /usr/include/c++/15.2.1/new \
- /usr/include/c++/15.2.1/bits/move.h /usr/include/c++/15.2.1/type_traits \
- /usr/include/c++/15.2.1/bits/nested_exception.h \
- /usr/include/c++/15.2.1/bits/char_traits.h \
+ /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/c++/15.2.1/debug/debug.h \
+ /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
+ /usr/include/c++/15.2.1/streambuf \
  /usr/include/c++/15.2.1/bits/localefwd.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/include/c++/15.2.1/clocale /usr/include/locale.h \
@@ -78,27 +89,22 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
  /usr/include/sys/single_threaded.h \
  /usr/include/c++/15.2.1/bits/locale_classes.h \
- /usr/include/c++/15.2.1/string /usr/include/c++/15.2.1/bits/allocator.h \
+ /usr/include/c++/15.2.1/string \
+ /usr/include/c++/15.2.1/bits/char_traits.h \
+ /usr/include/c++/15.2.1/bits/allocator.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/15.2.1/bits/new_allocator.h \
+ /usr/include/c++/15.2.1/bits/new_allocator.h /usr/include/c++/15.2.1/new \
+ /usr/include/c++/15.2.1/bits/exception.h \
  /usr/include/c++/15.2.1/bits/functexcept.h \
- /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/15.2.1/bits/exception_defines.h \
  /usr/include/c++/15.2.1/bits/ostream_insert.h \
  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
- /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/15.2.1/bits/concept_check.h \
- /usr/include/c++/15.2.1/debug/assertions.h \
- /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
- /usr/include/c++/15.2.1/bits/stl_iterator.h \
- /usr/include/c++/15.2.1/ext/type_traits.h \
- /usr/include/c++/15.2.1/bits/ptr_traits.h \
  /usr/include/c++/15.2.1/bits/stl_function.h \
  /usr/include/c++/15.2.1/backward/binders.h \
  /usr/include/c++/15.2.1/ext/numeric_traits.h \
  /usr/include/c++/15.2.1/bits/stl_algobase.h \
  /usr/include/c++/15.2.1/bits/stl_pair.h \
  /usr/include/c++/15.2.1/bits/utility.h \
- /usr/include/c++/15.2.1/debug/debug.h \
  /usr/include/c++/15.2.1/bits/predefined_ops.h \
  /usr/include/c++/15.2.1/bit /usr/include/c++/15.2.1/concepts \
  /usr/include/c++/15.2.1/bits/refwrap.h \
@@ -111,6 +117,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_construct.h \
  /usr/include/c++/15.2.1/string_view \
  /usr/include/c++/15.2.1/bits/functional_hash.h \
+ /usr/include/c++/15.2.1/bits/hash_bytes.h \
  /usr/include/c++/15.2.1/bits/string_view.tcc \
  /usr/include/c++/15.2.1/ext/string_conversions.h \
  /usr/include/c++/15.2.1/cstdlib /usr/include/stdlib.h \
@@ -120,38 +127,26 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/sys/select.h /usr/include/bits/select.h \
  /usr/include/bits/types/sigset_t.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h /usr/include/c++/15.2.1/bits/std_abs.h \
- /usr/include/c++/15.2.1/cstdio /usr/include/stdio.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
- /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/15.2.1/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
+ /usr/include/c++/15.2.1/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/15.2.1/bits/charconv.h \
  /usr/include/c++/15.2.1/bits/basic_string.tcc \
  /usr/include/c++/15.2.1/bits/memory_resource.h \
- /usr/include/c++/15.2.1/cstddef \
  /usr/include/c++/15.2.1/bits/uses_allocator.h \
  /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/15.2.1/tuple \
  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
  /usr/include/c++/15.2.1/system_error \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/15.2.1/stdexcept /usr/include/c++/15.2.1/streambuf \
+ /usr/include/c++/15.2.1/stdexcept /usr/include/c++/15.2.1/exception \
+ /usr/include/c++/15.2.1/bits/exception_ptr.h \
+ /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
+ /usr/include/c++/15.2.1/typeinfo \
+ /usr/include/c++/15.2.1/bits/nested_exception.h \
  /usr/include/c++/15.2.1/bits/streambuf.tcc \
- /usr/include/c++/15.2.1/bits/basic_ios.h \
- /usr/include/c++/15.2.1/bits/locale_facets.h \
- /usr/include/c++/15.2.1/cwctype /usr/include/wctype.h \
- /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
- /usr/include/c++/15.2.1/bits/locale_facets.tcc \
- /usr/include/c++/15.2.1/bits/basic_ios.tcc \
- /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc /usr/include/c++/15.2.1/memory \
+ /usr/include/c++/15.2.1/limits /usr/include/c++/15.2.1/memory \
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
@@ -168,11 +163,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/backward/auto_ptr.h \
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/15.2.1/pstl/execution_defs.h \
- /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
- /usr/include/c++/15.2.1/bits/stl_bvector.h \
- /usr/include/c++/15.2.1/bits/vector.tcc \
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h \
- /home/vladimir/Documents/CPlus/Game/src/Scenes/MenuScene.h \
  /home/vladimir/Documents/CPlus/Game/_deps/ecs-src/ECS.h \
  /usr/include/c++/15.2.1/unordered_map \
  /usr/include/c++/15.2.1/bits/unordered_map.h \
@@ -183,30 +173,34 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/erase_if.h \
  /usr/include/c++/15.2.1/functional \
  /usr/include/c++/15.2.1/bits/std_function.h \
- /usr/include/c++/15.2.1/array /usr/include/c++/15.2.1/compare \
- /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/vector /usr/include/c++/15.2.1/bits/stl_vector.h \
+ /usr/include/c++/15.2.1/bits/stl_bvector.h \
+ /usr/include/c++/15.2.1/bits/vector.tcc /usr/include/c++/15.2.1/array \
+ /usr/include/c++/15.2.1/compare /usr/include/c++/15.2.1/algorithm \
  /usr/include/c++/15.2.1/bits/stl_algo.h \
  /usr/include/c++/15.2.1/bits/algorithmfwd.h \
  /usr/include/c++/15.2.1/bits/stl_heap.h \
  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/15.2.1/typeindex \
- /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imgui.h \
- /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imconfig.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
- /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_glfw.h \
- /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_opengl3.h \
  /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h \
- /home/vladimir/Documents/CPlus/Game/include/texture.h \
- /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
- /usr/include/c++/15.2.1/stdlib.h \
- /home/vladimir/Documents/CPlus/Game/include/shader.h \
- /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
- /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h \
+ /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/ostream \
+ /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
+ /usr/include/c++/15.2.1/bits/basic_ios.h \
+ /usr/include/c++/15.2.1/bits/locale_facets.h \
+ /usr/include/c++/15.2.1/cwctype /usr/include/wctype.h \
+ /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/15.2.1/bits/locale_facets.tcc \
+ /usr/include/c++/15.2.1/bits/basic_ios.tcc \
+ /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
+ /usr/include/c++/15.2.1/bits/istream.tcc \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Player/PlayerInput.h \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/glm.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath /usr/include/math.h \
@@ -216,7 +210,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/15.2.1/bits/specfun.h \
- /usr/include/c++/15.2.1/limits /usr/include/c++/15.2.1/tr1/gamma.tcc \
+ /usr/include/c++/15.2.1/tr1/gamma.tcc \
  /usr/include/c++/15.2.1/tr1/special_function_util.h \
  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
@@ -229,7 +223,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp \
- /usr/include/c++/15.2.1/cassert \
+ /usr/include/c++/15.2.1/cassert /usr/include/assert.h \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/../simd/platform.h \
  /usr/include/c++/15.2.1/cstdint /usr/include/c++/15.2.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
@@ -238,6 +232,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/uio_lim.h /usr/include/c++/15.2.1/cfloat \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/fwd.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/qualifier.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp \
@@ -375,21 +370,29 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_half.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/integer.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/func_integer.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h \
+ /home/vladimir/Documents/CPlus/Game/include/shader.h \
+ /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
+ /usr/include/c++/15.2.1/bits/sstream.tcc \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/quaternion.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
@@ -425,19 +428,16 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
- /usr/include/c++/15.2.1/cstring \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.inl \
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h \
+ /home/vladimir/Documents/CPlus/Game/include/texture.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h \
  /home/vladimir/Documents/CPlus/Game/include/shader.h \
  /home/vladimir/Documents/CPlus/Game/include/VAO.h \
  /home/vladimir/Documents/CPlus/Game/include/VBO.h \
  /home/vladimir/Documents/CPlus/Game/include/EBO.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h \
- /usr/include/c++/15.2.1/thread /usr/include/c++/15.2.1/bits/std_thread.h \
- /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
- /usr/include/c++/15.2.1/bits/chrono.h /usr/include/c++/15.2.1/ratio \
- /usr/include/c++/15.2.1/ctime \
- /usr/include/c++/15.2.1/bits/parse_numbers.h \
- /usr/include/c++/15.2.1/chrono
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imgui.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imconfig.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_glfw.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_opengl3.h

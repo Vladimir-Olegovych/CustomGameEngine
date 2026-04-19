@@ -65,12 +65,14 @@ class SpriteBatch {
         shader.setMat4("view", view);
     }
 
-    void drawTexture(Texture& texture, float x, float y, float width, float height) {
+    void drawTexture(Texture& texture, float x, float y, float width, float height, float angle = 0.0f) {
         texture.bind();
 
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(x + width/2.0f, y + height/2.0f, 0.0f));
+        model = glm::rotate(model, angle, glm::vec3(0.0f, 0.0f, 1.0f));
         model = glm::scale(model, glm::vec3(width, height, 1.0f));
+        
         shader.setMat4("model", model);
 
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -88,6 +90,11 @@ class SpriteBatch {
         projection = glm::ortho(0.0f, (float)width, 0.0f, (float)height, -1.0f, 1.0f);
         shader.activate();
         shader.setMat4("projection", projection);
+    }
+
+    void clear(){
+        vao.unbind();
+        shader.remove();
     }
 
     ~SpriteBatch() = default;

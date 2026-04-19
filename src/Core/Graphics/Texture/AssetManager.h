@@ -6,10 +6,6 @@
 
 class AssetManager {
     public:
-    static AssetManager& getInstance() {
-        static AssetManager instance;
-        return instance;
-    }
     void loadTexture(const std::string& name, const char *filepath,
                      GLenum texType = GL_TEXTURE_2D,
                      GLenum slot = GL_TEXTURE0,
@@ -37,10 +33,5 @@ class AssetManager {
     }
 
     private:
-    AssetManager() = default;
-    ~AssetManager() = default;
-    AssetManager(const AssetManager&) = delete;
-    AssetManager& operator=(const AssetManager&) = delete;
-
     std::unordered_map<std::string, Texture> m_textures;
 };

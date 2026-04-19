@@ -1058,6 +1058,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
 CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/src/main.cpp
  /home/vladimir/Documents/CPlus/Game/_deps/ecs-src/ECS.h
+ /home/vladimir/Documents/CPlus/Game/_deps/fmt-src/include/fmt/core.h
  /home/vladimir/Documents/CPlus/Game/_deps/glfw-src/include/GLFW/glfw3.h
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.inl
@@ -1193,6 +1194,17 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/fwd.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/glm.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/quaternion_relational.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/quaternion_relational.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
@@ -1223,24 +1235,13 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_relational.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_uint1.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_uint1_sized.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/epsilon.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/epsilon.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/quaternion.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/quaternion.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/vec1.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/integer.hpp
@@ -1265,8 +1266,10 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h
  /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h
  /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h
+ /home/vladimir/Documents/CPlus/Game/src/Core/Player/PlayerInput.h
  /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h
  /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h
  /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h
  /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h
  /home/vladimir/Documents/CPlus/Game/src/Scenes/MenuScene.h
@@ -1377,7 +1380,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/basic_string.tcc
  /usr/include/c++/15.2.1/bits/char_traits.h
  /usr/include/c++/15.2.1/bits/charconv.h
- /usr/include/c++/15.2.1/bits/chrono.h
  /usr/include/c++/15.2.1/bits/codecvt.h
  /usr/include/c++/15.2.1/bits/concept_check.h
  /usr/include/c++/15.2.1/bits/cpp_type_traits.h
@@ -1411,7 +1413,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/ostream.h
  /usr/include/c++/15.2.1/bits/ostream.tcc
  /usr/include/c++/15.2.1/bits/ostream_insert.h
- /usr/include/c++/15.2.1/bits/parse_numbers.h
  /usr/include/c++/15.2.1/bits/postypes.h
  /usr/include/c++/15.2.1/bits/predefined_ops.h
  /usr/include/c++/15.2.1/bits/ptr_traits.h
@@ -1425,7 +1426,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/sstream.tcc
  /usr/include/c++/15.2.1/bits/std_abs.h
  /usr/include/c++/15.2.1/bits/std_function.h
- /usr/include/c++/15.2.1/bits/std_thread.h
  /usr/include/c++/15.2.1/bits/stl_algo.h
  /usr/include/c++/15.2.1/bits/stl_algobase.h
  /usr/include/c++/15.2.1/bits/stl_bvector.h
@@ -1440,11 +1440,11 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h
  /usr/include/c++/15.2.1/bits/stl_vector.h
+ /usr/include/c++/15.2.1/bits/stream_iterator.h
  /usr/include/c++/15.2.1/bits/streambuf.tcc
  /usr/include/c++/15.2.1/bits/streambuf_iterator.h
  /usr/include/c++/15.2.1/bits/string_view.tcc
  /usr/include/c++/15.2.1/bits/stringfwd.h
- /usr/include/c++/15.2.1/bits/this_thread_sleep.h
  /usr/include/c++/15.2.1/bits/uniform_int_dist.h
  /usr/include/c++/15.2.1/bits/unique_ptr.h
  /usr/include/c++/15.2.1/bits/unordered_map.h
@@ -1457,7 +1457,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/cctype
  /usr/include/c++/15.2.1/cerrno
  /usr/include/c++/15.2.1/cfloat
- /usr/include/c++/15.2.1/chrono
  /usr/include/c++/15.2.1/climits
  /usr/include/c++/15.2.1/clocale
  /usr/include/c++/15.2.1/cmath
@@ -1468,7 +1467,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/cstdio
  /usr/include/c++/15.2.1/cstdlib
  /usr/include/c++/15.2.1/cstring
- /usr/include/c++/15.2.1/ctime
  /usr/include/c++/15.2.1/cwchar
  /usr/include/c++/15.2.1/cwctype
  /usr/include/c++/15.2.1/debug/assertions.h
@@ -1488,6 +1486,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/iosfwd
  /usr/include/c++/15.2.1/iostream
  /usr/include/c++/15.2.1/istream
+ /usr/include/c++/15.2.1/iterator
  /usr/include/c++/15.2.1/limits
  /usr/include/c++/15.2.1/memory
  /usr/include/c++/15.2.1/new
@@ -1496,7 +1495,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h
  /usr/include/c++/15.2.1/pstl/pstl_config.h
- /usr/include/c++/15.2.1/ratio
  /usr/include/c++/15.2.1/sstream
  /usr/include/c++/15.2.1/stdexcept
  /usr/include/c++/15.2.1/stdlib.h
@@ -1504,7 +1502,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/string
  /usr/include/c++/15.2.1/string_view
  /usr/include/c++/15.2.1/system_error
- /usr/include/c++/15.2.1/thread
  /usr/include/c++/15.2.1/tr1/bessel_function.tcc
  /usr/include/c++/15.2.1/tr1/beta_function.tcc
  /usr/include/c++/15.2.1/tr1/ell_integral.tcc

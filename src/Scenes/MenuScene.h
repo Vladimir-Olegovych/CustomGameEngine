@@ -1,14 +1,13 @@
 #pragma once
 
+#include <fmt/core.h>
+
 #include <ECS.h>
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
-#include <imgui.h>
-#include <imgui_impl_glfw.h>
-#include <imgui_impl_opengl3.h>
 
 #include <ECS/Systems/DrawSystem.h>
-#include <ECS/Components/Position.h>
+#include <ECS/Components/Context.h>
 
 using namespace ECS;
 
@@ -20,7 +19,7 @@ class MenuScene : public Scene {
     void onEnterApplication() override {
         world = World::createWorld();
 
-        DrawSystem* drawSystem = new DrawSystem();
+        DrawSystem* drawSystem = new DrawSystem(context);
         world->registerSystem(drawSystem);
     }
 
@@ -34,25 +33,14 @@ class MenuScene : public Scene {
     void onExit() override {}
 
     void update(float deltaTime) override {
-        glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        ImGuiIO& io = ImGui::GetIO();
-        ImGui::Begin("Game Info", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize);
-        ImGui::SetWindowPos(ImVec2(10, 10), ImGuiCond_FirstUseEver);
-        ImGui::SetWindowSize(ImVec2(200, 100), ImGuiCond_FirstUseEver);
-        ImGui::Text("Menu Scene");
-        ImGui::Text("Delta: %.003f", deltaTime);
-        ImGui::Text("FPS: %.0f", io.Framerate);
-        ImGui::Text("Window Size: %.0f x %.0f", io.DisplaySize.x, io.DisplaySize.y);
-        ImGui::End();
-
+        context->playerInput.update(deltaTime);
         world->tick(deltaTime);
     }
-    
-    void handleInput(GLFWwindow* window) override {
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-            glfwSetWindowShouldClose(window, true);
-        }
+    void resize(int width, int height) override {
+        Context& context_ref = *context;
+        glViewport(0, 0, width, height);
+        context_ref.spriteBatch.resize(width, height);
+        
+        fmt::println("Width: {}, Height: {}", width, height);
     }
 };
