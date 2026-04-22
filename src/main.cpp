@@ -1,8 +1,8 @@
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 
-#include <Scenes/MenuScene.h>
-#include <ECS/Components/Context.h>
+#include <app/Scenes/MenuScene.h>
+#include <app/ECS/Components/Context.h>
 
 #include <imgui.h>
 #include <imgui_impl_glfw.h>

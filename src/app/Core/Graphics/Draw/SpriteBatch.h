@@ -2,7 +2,7 @@
 
 #include "shader.h"
 #include "texture.h"
-#include "Core/Graphics/Draw/Camera.h"
+#include "app/Core/Graphics/Draw/Camera.h"
 #include "VAO.h"
 #include "VBO.h"
 

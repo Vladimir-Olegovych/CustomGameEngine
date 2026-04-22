@@ -1,17 +1,17 @@
 #pragma once
 
 #include <ECS.h>
-#include <ECS/Components/Position.h>
-#include <ECS/Components/Size.h>
-#include <ECS/Components/TextureComponent.h>
-#include <ECS/Components/Context.h>
+#include <app/ECS/Components/Position.h>
+#include <app/ECS/Components/Size.h>
+#include <app/ECS/Components/TextureComponent.h>
+#include <app/ECS/Components/Context.h>
 
 #include <texture.h>
-#include <Resources/TextureData.h>
-#include <Core/Player/PlayerInput.h>
-#include <Core/Graphics/Texture/AssetManager.h>
-#include <Core/Graphics/Draw/SpriteBatch.h>
-#include <Core/Graphics/Draw/Camera.h>
+#include <app/Resources/TextureData.h>
+#include <app/Core/Player/PlayerInput.h>
+#include <app/Core/Graphics/Texture/AssetManager.h>
+#include <app/Core/Graphics/Draw/SpriteBatch.h>
+#include <app/Core/Graphics/Draw/Camera.h>
 
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>

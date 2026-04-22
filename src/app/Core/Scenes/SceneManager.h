@@ -3,8 +3,8 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-#include <Core/Scenes/Scene.h>
-#include <ECS/Components/Context.h>
+#include <app/Core/Scenes/Scene.h>
+#include <app/ECS/Components/Context.h>
 
 class SceneManager {
 private:

@@ -2,16 +2,18 @@
 
 #include <GLFW/glfw3.h>
 
-#include <Core/Scenes/SceneManager.h>
+#include <server/ServerMachine.h>
+#include <app/Core/Scenes/SceneManager.h>
 
-#include <Core/Player/PlayerInput.h>
-#include <Core/Graphics/Draw/Camera.h>
-#include <Core/Graphics/Draw/SpriteBatch.h>
-#include <Core/Graphics/Texture/AssetManager.h>
+#include <app/Core/Player/PlayerInput.h>
+#include <app/Core/Graphics/Draw/Camera.h>
+#include <app/Core/Graphics/Draw/SpriteBatch.h>
+#include <app/Core/Graphics/Texture/AssetManager.h>
 
 struct Context
 {
     GLFWwindow* window = nullptr;
+    ServerMachine serverMachine = ServerMachine();
     Camera camera = Camera();
     PlayerInput playerInput;
     SceneManager sceneManager;
@@ -25,6 +27,7 @@ struct Context
     }
 
     void clear(){
+        serverMachine.stopServer();
         assetManager.clear();
         spriteBatch.clear();
         sceneManager.destroyScenes();

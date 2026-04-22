@@ -72,8 +72,8 @@ CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Shader/shader.cpp
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Shader/shader.cpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x4.hpp
@@ -524,8 +524,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/texture.cpp
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Texture/texture.cpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x3.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_mat2x4.hpp
@@ -979,8 +979,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/EBO.cpp
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Vertex/EBO.cpp
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/KHR/khrplatform.h
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/glad/glad.h
  /home/vladimir/Documents/CPlus/Game/include/EBO.h
@@ -1004,8 +1004,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
  /usr/include/sys/cdefs.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VAO.cpp
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Vertex/VAO.cpp
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/KHR/khrplatform.h
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/glad/glad.h
  /home/vladimir/Documents/CPlus/Game/include/VAO.h
@@ -1030,8 +1030,8 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
  /usr/include/sys/cdefs.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Vertex/VBO.cpp
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Vertex/VBO.cpp
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/KHR/khrplatform.h
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/glad/glad.h
  /home/vladimir/Documents/CPlus/Game/include/VBO.h
@@ -1262,20 +1262,22 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/include/VBO.h
  /home/vladimir/Documents/CPlus/Game/include/shader.h
  /home/vladimir/Documents/CPlus/Game/include/texture.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Player/PlayerInput.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Size.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/TextureComponent.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/ChunkSystem.h
- /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h
- /home/vladimir/Documents/CPlus/Game/src/Resources/TextureData.h
- /home/vladimir/Documents/CPlus/Game/src/Scenes/MenuScene.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Draw/Camera.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Draw/SpriteBatch.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Graphics/Texture/AssetManager.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Player/PlayerInput.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Scenes/Scene.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Core/Scenes/SceneManager.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Components/Context.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Components/Position.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Components/Size.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Components/TextureComponent.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Systems/ChunkSystem.h
+ /home/vladimir/Documents/CPlus/Game/src/app/ECS/Systems/DrawSystem.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Resources/TextureData.h
+ /home/vladimir/Documents/CPlus/Game/src/app/Scenes/MenuScene.h
+ /home/vladimir/Documents/CPlus/Game/src/server/ECS/Systems/ServerSystem.h
+ /home/vladimir/Documents/CPlus/Game/src/server/ServerMachine.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
@@ -1367,6 +1369,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/bits/xopen_lim.h
  /usr/include/c++/15.2.1/algorithm
  /usr/include/c++/15.2.1/array
+ /usr/include/c++/15.2.1/atomic
  /usr/include/c++/15.2.1/backward/auto_ptr.h
  /usr/include/c++/15.2.1/backward/binders.h
  /usr/include/c++/15.2.1/bit
@@ -1383,6 +1386,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/basic_string.tcc
  /usr/include/c++/15.2.1/bits/char_traits.h
  /usr/include/c++/15.2.1/bits/charconv.h
+ /usr/include/c++/15.2.1/bits/chrono.h
  /usr/include/c++/15.2.1/bits/codecvt.h
  /usr/include/c++/15.2.1/bits/concept_check.h
  /usr/include/c++/15.2.1/bits/cpp_type_traits.h
@@ -1416,6 +1420,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/ostream.h
  /usr/include/c++/15.2.1/bits/ostream.tcc
  /usr/include/c++/15.2.1/bits/ostream_insert.h
+ /usr/include/c++/15.2.1/bits/parse_numbers.h
  /usr/include/c++/15.2.1/bits/postypes.h
  /usr/include/c++/15.2.1/bits/predefined_ops.h
  /usr/include/c++/15.2.1/bits/ptr_traits.h
@@ -1429,6 +1434,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/sstream.tcc
  /usr/include/c++/15.2.1/bits/std_abs.h
  /usr/include/c++/15.2.1/bits/std_function.h
+ /usr/include/c++/15.2.1/bits/std_thread.h
  /usr/include/c++/15.2.1/bits/stl_algo.h
  /usr/include/c++/15.2.1/bits/stl_algobase.h
  /usr/include/c++/15.2.1/bits/stl_bvector.h
@@ -1448,6 +1454,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/streambuf_iterator.h
  /usr/include/c++/15.2.1/bits/string_view.tcc
  /usr/include/c++/15.2.1/bits/stringfwd.h
+ /usr/include/c++/15.2.1/bits/this_thread_sleep.h
  /usr/include/c++/15.2.1/bits/uniform_int_dist.h
  /usr/include/c++/15.2.1/bits/unique_ptr.h
  /usr/include/c++/15.2.1/bits/unordered_map.h
@@ -1460,6 +1467,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/cctype
  /usr/include/c++/15.2.1/cerrno
  /usr/include/c++/15.2.1/cfloat
+ /usr/include/c++/15.2.1/chrono
  /usr/include/c++/15.2.1/climits
  /usr/include/c++/15.2.1/clocale
  /usr/include/c++/15.2.1/cmath
@@ -1470,6 +1478,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/cstdio
  /usr/include/c++/15.2.1/cstdlib
  /usr/include/c++/15.2.1/cstring
+ /usr/include/c++/15.2.1/ctime
  /usr/include/c++/15.2.1/cwchar
  /usr/include/c++/15.2.1/cwctype
  /usr/include/c++/15.2.1/debug/assertions.h
@@ -1498,6 +1507,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h
  /usr/include/c++/15.2.1/pstl/pstl_config.h
+ /usr/include/c++/15.2.1/ratio
  /usr/include/c++/15.2.1/sstream
  /usr/include/c++/15.2.1/stdexcept
  /usr/include/c++/15.2.1/stdlib.h
@@ -1505,6 +1515,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/string
  /usr/include/c++/15.2.1/string_view
  /usr/include/c++/15.2.1/system_error
+ /usr/include/c++/15.2.1/thread
  /usr/include/c++/15.2.1/tr1/bessel_function.tcc
  /usr/include/c++/15.2.1/tr1/beta_function.tcc
  /usr/include/c++/15.2.1/tr1/ell_integral.tcc
@@ -1606,11 +1617,11 @@ my_app
  /usr/lib32/libXdmcp.so.6
  /usr/lib32/libxcb.so.1
  /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o
- /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
- /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o
- /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
- /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
- /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o
+ /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o
+ /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o
+ /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o
  /home/vladimir/Documents/CPlus/Game/CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/fmt-build/libfmt.a
  /home/vladimir/Documents/CPlus/Game/_deps/glfw-build/src/libglfw3.a

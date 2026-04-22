@@ -6,9 +6,9 @@
 #include "glad/glad.h"
 #include <GLFW/glfw3.h>
 
-#include <ECS/Systems/DrawSystem.h>
-#include <ECS/Systems/ChunkSystem.h>
-#include <ECS/Components/Context.h>
+#include <app/ECS/Systems/DrawSystem.h>
+#include <app/ECS/Systems/ChunkSystem.h>
+#include <app/ECS/Components/Context.h>
 
 using namespace ECS;
 
@@ -24,6 +24,8 @@ class MenuScene : public Scene {
         world->registerSystem(drawSystem);
         ChunkSystem* chunkSystem = new ChunkSystem(context);
         world->registerSystem(chunkSystem);
+
+        context->serverMachine.startServer();
     }
 
     void onExitApplication() override {

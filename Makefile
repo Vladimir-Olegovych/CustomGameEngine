@@ -468,125 +468,125 @@ _deps_external/stb_image/src/stb_image_impl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/_deps_external/stb_image/src/stb_image_impl.c.s
 .PHONY : _deps_external/stb_image/src/stb_image_impl.c.s
 
-src/Core/Graphics/Shader/shader.o: src/Core/Graphics/Shader/shader.cpp.o
-.PHONY : src/Core/Graphics/Shader/shader.o
+src/app/Core/Graphics/Shader/shader.o: src/app/Core/Graphics/Shader/shader.cpp.o
+.PHONY : src/app/Core/Graphics/Shader/shader.o
 
 # target to build an object file
-src/Core/Graphics/Shader/shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o
-.PHONY : src/Core/Graphics/Shader/shader.cpp.o
+src/app/Core/Graphics/Shader/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o
+.PHONY : src/app/Core/Graphics/Shader/shader.cpp.o
 
-src/Core/Graphics/Shader/shader.i: src/Core/Graphics/Shader/shader.cpp.i
-.PHONY : src/Core/Graphics/Shader/shader.i
+src/app/Core/Graphics/Shader/shader.i: src/app/Core/Graphics/Shader/shader.cpp.i
+.PHONY : src/app/Core/Graphics/Shader/shader.i
 
 # target to preprocess a source file
-src/Core/Graphics/Shader/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.i
-.PHONY : src/Core/Graphics/Shader/shader.cpp.i
+src/app/Core/Graphics/Shader/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.i
+.PHONY : src/app/Core/Graphics/Shader/shader.cpp.i
 
-src/Core/Graphics/Shader/shader.s: src/Core/Graphics/Shader/shader.cpp.s
-.PHONY : src/Core/Graphics/Shader/shader.s
+src/app/Core/Graphics/Shader/shader.s: src/app/Core/Graphics/Shader/shader.cpp.s
+.PHONY : src/app/Core/Graphics/Shader/shader.s
 
 # target to generate assembly for a file
-src/Core/Graphics/Shader/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.s
-.PHONY : src/Core/Graphics/Shader/shader.cpp.s
+src/app/Core/Graphics/Shader/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.s
+.PHONY : src/app/Core/Graphics/Shader/shader.cpp.s
 
-src/Core/Graphics/Texture/texture.o: src/Core/Graphics/Texture/texture.cpp.o
-.PHONY : src/Core/Graphics/Texture/texture.o
+src/app/Core/Graphics/Texture/texture.o: src/app/Core/Graphics/Texture/texture.cpp.o
+.PHONY : src/app/Core/Graphics/Texture/texture.o
 
 # target to build an object file
-src/Core/Graphics/Texture/texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o
-.PHONY : src/Core/Graphics/Texture/texture.cpp.o
+src/app/Core/Graphics/Texture/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o
+.PHONY : src/app/Core/Graphics/Texture/texture.cpp.o
 
-src/Core/Graphics/Texture/texture.i: src/Core/Graphics/Texture/texture.cpp.i
-.PHONY : src/Core/Graphics/Texture/texture.i
+src/app/Core/Graphics/Texture/texture.i: src/app/Core/Graphics/Texture/texture.cpp.i
+.PHONY : src/app/Core/Graphics/Texture/texture.i
 
 # target to preprocess a source file
-src/Core/Graphics/Texture/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.i
-.PHONY : src/Core/Graphics/Texture/texture.cpp.i
+src/app/Core/Graphics/Texture/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.i
+.PHONY : src/app/Core/Graphics/Texture/texture.cpp.i
 
-src/Core/Graphics/Texture/texture.s: src/Core/Graphics/Texture/texture.cpp.s
-.PHONY : src/Core/Graphics/Texture/texture.s
+src/app/Core/Graphics/Texture/texture.s: src/app/Core/Graphics/Texture/texture.cpp.s
+.PHONY : src/app/Core/Graphics/Texture/texture.s
 
 # target to generate assembly for a file
-src/Core/Graphics/Texture/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.s
-.PHONY : src/Core/Graphics/Texture/texture.cpp.s
+src/app/Core/Graphics/Texture/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.s
+.PHONY : src/app/Core/Graphics/Texture/texture.cpp.s
 
-src/Core/Graphics/Vertex/EBO.o: src/Core/Graphics/Vertex/EBO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/EBO.o
+src/app/Core/Graphics/Vertex/EBO.o: src/app/Core/Graphics/Vertex/EBO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/EBO.o
 
 # target to build an object file
-src/Core/Graphics/Vertex/EBO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/EBO.cpp.o
+src/app/Core/Graphics/Vertex/EBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/EBO.cpp.o
 
-src/Core/Graphics/Vertex/EBO.i: src/Core/Graphics/Vertex/EBO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/EBO.i
+src/app/Core/Graphics/Vertex/EBO.i: src/app/Core/Graphics/Vertex/EBO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/EBO.i
 
 # target to preprocess a source file
-src/Core/Graphics/Vertex/EBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/EBO.cpp.i
+src/app/Core/Graphics/Vertex/EBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/EBO.cpp.i
 
-src/Core/Graphics/Vertex/EBO.s: src/Core/Graphics/Vertex/EBO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/EBO.s
+src/app/Core/Graphics/Vertex/EBO.s: src/app/Core/Graphics/Vertex/EBO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/EBO.s
 
 # target to generate assembly for a file
-src/Core/Graphics/Vertex/EBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/EBO.cpp.s
+src/app/Core/Graphics/Vertex/EBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/EBO.cpp.s
 
-src/Core/Graphics/Vertex/VAO.o: src/Core/Graphics/Vertex/VAO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/VAO.o
+src/app/Core/Graphics/Vertex/VAO.o: src/app/Core/Graphics/Vertex/VAO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/VAO.o
 
 # target to build an object file
-src/Core/Graphics/Vertex/VAO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/VAO.cpp.o
+src/app/Core/Graphics/Vertex/VAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/VAO.cpp.o
 
-src/Core/Graphics/Vertex/VAO.i: src/Core/Graphics/Vertex/VAO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/VAO.i
+src/app/Core/Graphics/Vertex/VAO.i: src/app/Core/Graphics/Vertex/VAO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/VAO.i
 
 # target to preprocess a source file
-src/Core/Graphics/Vertex/VAO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/VAO.cpp.i
+src/app/Core/Graphics/Vertex/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/VAO.cpp.i
 
-src/Core/Graphics/Vertex/VAO.s: src/Core/Graphics/Vertex/VAO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/VAO.s
+src/app/Core/Graphics/Vertex/VAO.s: src/app/Core/Graphics/Vertex/VAO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/VAO.s
 
 # target to generate assembly for a file
-src/Core/Graphics/Vertex/VAO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/VAO.cpp.s
+src/app/Core/Graphics/Vertex/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/VAO.cpp.s
 
-src/Core/Graphics/Vertex/VBO.o: src/Core/Graphics/Vertex/VBO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/VBO.o
+src/app/Core/Graphics/Vertex/VBO.o: src/app/Core/Graphics/Vertex/VBO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/VBO.o
 
 # target to build an object file
-src/Core/Graphics/Vertex/VBO.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o
-.PHONY : src/Core/Graphics/Vertex/VBO.cpp.o
+src/app/Core/Graphics/Vertex/VBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o
+.PHONY : src/app/Core/Graphics/Vertex/VBO.cpp.o
 
-src/Core/Graphics/Vertex/VBO.i: src/Core/Graphics/Vertex/VBO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/VBO.i
+src/app/Core/Graphics/Vertex/VBO.i: src/app/Core/Graphics/Vertex/VBO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/VBO.i
 
 # target to preprocess a source file
-src/Core/Graphics/Vertex/VBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.i
-.PHONY : src/Core/Graphics/Vertex/VBO.cpp.i
+src/app/Core/Graphics/Vertex/VBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.i
+.PHONY : src/app/Core/Graphics/Vertex/VBO.cpp.i
 
-src/Core/Graphics/Vertex/VBO.s: src/Core/Graphics/Vertex/VBO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/VBO.s
+src/app/Core/Graphics/Vertex/VBO.s: src/app/Core/Graphics/Vertex/VBO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/VBO.s
 
 # target to generate assembly for a file
-src/Core/Graphics/Vertex/VBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.s
-.PHONY : src/Core/Graphics/Vertex/VBO.cpp.s
+src/app/Core/Graphics/Vertex/VBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_app.dir/build.make CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.s
+.PHONY : src/app/Core/Graphics/Vertex/VBO.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -658,21 +658,21 @@ help:
 	@echo "... _deps_external/stb_image/src/stb_image_impl.o"
 	@echo "... _deps_external/stb_image/src/stb_image_impl.i"
 	@echo "... _deps_external/stb_image/src/stb_image_impl.s"
-	@echo "... src/Core/Graphics/Shader/shader.o"
-	@echo "... src/Core/Graphics/Shader/shader.i"
-	@echo "... src/Core/Graphics/Shader/shader.s"
-	@echo "... src/Core/Graphics/Texture/texture.o"
-	@echo "... src/Core/Graphics/Texture/texture.i"
-	@echo "... src/Core/Graphics/Texture/texture.s"
-	@echo "... src/Core/Graphics/Vertex/EBO.o"
-	@echo "... src/Core/Graphics/Vertex/EBO.i"
-	@echo "... src/Core/Graphics/Vertex/EBO.s"
-	@echo "... src/Core/Graphics/Vertex/VAO.o"
-	@echo "... src/Core/Graphics/Vertex/VAO.i"
-	@echo "... src/Core/Graphics/Vertex/VAO.s"
-	@echo "... src/Core/Graphics/Vertex/VBO.o"
-	@echo "... src/Core/Graphics/Vertex/VBO.i"
-	@echo "... src/Core/Graphics/Vertex/VBO.s"
+	@echo "... src/app/Core/Graphics/Shader/shader.o"
+	@echo "... src/app/Core/Graphics/Shader/shader.i"
+	@echo "... src/app/Core/Graphics/Shader/shader.s"
+	@echo "... src/app/Core/Graphics/Texture/texture.o"
+	@echo "... src/app/Core/Graphics/Texture/texture.i"
+	@echo "... src/app/Core/Graphics/Texture/texture.s"
+	@echo "... src/app/Core/Graphics/Vertex/EBO.o"
+	@echo "... src/app/Core/Graphics/Vertex/EBO.i"
+	@echo "... src/app/Core/Graphics/Vertex/EBO.s"
+	@echo "... src/app/Core/Graphics/Vertex/VAO.o"
+	@echo "... src/app/Core/Graphics/Vertex/VAO.i"
+	@echo "... src/app/Core/Graphics/Vertex/VAO.s"
+	@echo "... src/app/Core/Graphics/Vertex/VBO.o"
+	@echo "... src/app/Core/Graphics/Vertex/VBO.i"
+	@echo "... src/app/Core/Graphics/Vertex/VBO.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

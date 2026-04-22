@@ -71,7 +71,7 @@ CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o: _deps_external/glad/src/
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o: src/Core/Graphics/Shader/shader.cpp \
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o: src/app/Core/Graphics/Shader/shader.cpp \
   _deps/glm-src/glm/detail/type_mat2x3.hpp \
   _deps/glm-src/glm/detail/type_mat2x3.inl \
   _deps/glm-src/glm/detail/type_mat2x4.hpp \
@@ -522,7 +522,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o: src/Core/Graphics/S
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o: src/Core/Graphics/Texture/texture.cpp \
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o: src/app/Core/Graphics/Texture/texture.cpp \
   _deps/glm-src/glm/detail/type_mat2x3.hpp \
   _deps/glm-src/glm/detail/type_mat2x3.inl \
   _deps/glm-src/glm/detail/type_mat2x4.hpp \
@@ -976,7 +976,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o: src/Core/Graphics
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o: src/Core/Graphics/Vertex/EBO.cpp \
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o: src/app/Core/Graphics/Vertex/EBO.cpp \
   _deps_external/glad/include/KHR/khrplatform.h \
   _deps_external/glad/include/glad/glad.h \
   include/EBO.h \
@@ -1000,7 +1000,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o: src/Core/Graphics/Vert
   /usr/include/sys/cdefs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o: src/Core/Graphics/Vertex/VAO.cpp \
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o: src/app/Core/Graphics/Vertex/VAO.cpp \
   _deps_external/glad/include/KHR/khrplatform.h \
   _deps_external/glad/include/glad/glad.h \
   include/VAO.h \
@@ -1025,7 +1025,7 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o: src/Core/Graphics/Vert
   /usr/include/sys/cdefs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o: src/Core/Graphics/Vertex/VBO.cpp \
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o: src/app/Core/Graphics/Vertex/VBO.cpp \
   _deps_external/glad/include/KHR/khrplatform.h \
   _deps_external/glad/include/glad/glad.h \
   include/VBO.h \
@@ -1255,20 +1255,22 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   include/VBO.h \
   include/shader.h \
   include/texture.h \
-  src/Core/Graphics/Draw/Camera.h \
-  src/Core/Graphics/Draw/SpriteBatch.h \
-  src/Core/Graphics/Texture/AssetManager.h \
-  src/Core/Player/PlayerInput.h \
-  src/Core/Scenes/Scene.h \
-  src/Core/Scenes/SceneManager.h \
-  src/ECS/Components/Context.h \
-  src/ECS/Components/Position.h \
-  src/ECS/Components/Size.h \
-  src/ECS/Components/TextureComponent.h \
-  src/ECS/Systems/ChunkSystem.h \
-  src/ECS/Systems/DrawSystem.h \
-  src/Resources/TextureData.h \
-  src/Scenes/MenuScene.h \
+  src/app/Core/Graphics/Draw/Camera.h \
+  src/app/Core/Graphics/Draw/SpriteBatch.h \
+  src/app/Core/Graphics/Texture/AssetManager.h \
+  src/app/Core/Player/PlayerInput.h \
+  src/app/Core/Scenes/Scene.h \
+  src/app/Core/Scenes/SceneManager.h \
+  src/app/ECS/Components/Context.h \
+  src/app/ECS/Components/Position.h \
+  src/app/ECS/Components/Size.h \
+  src/app/ECS/Components/TextureComponent.h \
+  src/app/ECS/Systems/ChunkSystem.h \
+  src/app/ECS/Systems/DrawSystem.h \
+  src/app/Resources/TextureData.h \
+  src/app/Scenes/MenuScene.h \
+  src/server/ECS/Systems/ServerSystem.h \
+  src/server/ServerMachine.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1360,6 +1362,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/15.2.1/algorithm \
   /usr/include/c++/15.2.1/array \
+  /usr/include/c++/15.2.1/atomic \
   /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
@@ -1376,6 +1379,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
+  /usr/include/c++/15.2.1/bits/chrono.h \
   /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
@@ -1409,6 +1413,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/ostream.h \
   /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -1422,6 +1427,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/std_function.h \
+  /usr/include/c++/15.2.1/bits/std_thread.h \
   /usr/include/c++/15.2.1/bits/stl_algo.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
   /usr/include/c++/15.2.1/bits/stl_bvector.h \
@@ -1441,6 +1447,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
+  /usr/include/c++/15.2.1/bits/this_thread_sleep.h \
   /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/unordered_map.h \
@@ -1453,6 +1460,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
   /usr/include/c++/15.2.1/cfloat \
+  /usr/include/c++/15.2.1/chrono \
   /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
@@ -1463,6 +1471,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
   /usr/include/c++/15.2.1/cstring \
+  /usr/include/c++/15.2.1/ctime \
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
@@ -1491,6 +1500,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
+  /usr/include/c++/15.2.1/ratio \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/stdlib.h \
@@ -1498,6 +1508,7 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/system_error \
+  /usr/include/c++/15.2.1/thread \
   /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
   /usr/include/c++/15.2.1/tr1/beta_function.tcc \
   /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
@@ -1598,11 +1609,11 @@ my_app: /usr/lib/Scrt1.o \
   /usr/lib32/libXdmcp.so.6 \
   /usr/lib32/libxcb.so.1 \
   CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o \
-  CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o \
-  CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o \
-  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o \
-  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o \
-  CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o \
+  CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o \
+  CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o \
+  CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o \
+  CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o \
+  CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o \
   CMakeFiles/my_app.dir/src/main.cpp.o \
   _deps/fmt-build/libfmt.a \
   _deps/glfw-build/src/libglfw3.a \
@@ -1617,9 +1628,9 @@ _deps/glm-build/glm/libglm.a:
 
 _deps/fmt-build/libfmt.a:
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/EBO.cpp.o:
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VAO.cpp.o:
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Shader/shader.cpp.o:
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Shader/shader.cpp.o:
 
 CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o:
 
@@ -1630,6 +1641,20 @@ CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o:
 /usr/lib32/libXau.so.6:
 
 /usr/lib32/libGLdispatch.so.0:
+
+/usr/lib/librt.a:
+
+/usr/lib/libm.so.6:
+
+/usr/lib/libc_nonshared.a:
+
+/usr/lib/libXdmcp.so.6:
+
+/usr/lib/libXau.so.6:
+
+/usr/lib/libX11.so.6:
+
+/usr/lib/libOpenGL.so:
 
 /usr/include/asm-generic/int-ll64.h:
 
@@ -1665,6 +1690,8 @@ _deps/glm-src/glm/ext/matrix_clip_space.inl:
 
 _deps/glm-src/glm/ext/matrix_projection.hpp:
 
+src/app/Core/Graphics/Draw/Camera.h:
+
 _deps/glm-src/glm/ext/matrix_clip_space.hpp:
 
 _deps/glm-src/glm/ext/vector_relational.inl:
@@ -1685,8 +1712,6 @@ _deps/glm-src/glm/ext/vector_bool1.hpp:
 
 _deps/glm-src/glm/matrix.hpp:
 
-src/Resources/TextureData.h:
-
 _deps/glm-src/glm/ext/quaternion_float_precision.hpp:
 
 _deps/glm-src/glm/ext/vector_uint1.hpp:
@@ -1694,6 +1719,10 @@ _deps/glm-src/glm/ext/vector_uint1.hpp:
 _deps/glm-src/glm/gtc/epsilon.hpp:
 
 _deps/glm-src/glm/detail/type_vec3.inl:
+
+/usr/lib/libGLdispatch.so.0:
+
+/usr/include/c++/15.2.1/backward/binders.h:
 
 _deps/glm-src/glm/ext/quaternion_float.hpp:
 
@@ -1723,11 +1752,13 @@ _deps/glm-src/glm/detail/type_half.hpp:
 
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
 
-src/Core/Graphics/Texture/texture.cpp:
-
 _deps/glm-src/glm/detail/qualifier.hpp:
 
+_deps/glm-src/glm/detail/func_matrix.inl:
+
 _deps/glm-src/glm/detail/func_integer.inl:
+
+src/app/Core/Graphics/Vertex/EBO.cpp:
 
 _deps/glm-src/glm/simd/platform.h:
 
@@ -1736,8 +1767,6 @@ _deps/glm-src/glm/ext/vector_uint2_sized.hpp:
 _deps/glm-src/glm/ext/vector_uint2.hpp:
 
 _deps/glm-src/glm/ext/vector_float4_precision.hpp:
-
-_deps/glm-src/glm/ext/vector_float4.hpp:
 
 _deps/glm-src/glm/mat3x3.hpp:
 
@@ -1771,6 +1800,12 @@ _deps/glm-src/glm/ext/quaternion_transform.inl:
 
 /usr/include/bits/mathcalls.h:
 
+/usr/lib/libxcb.so.1:
+
+_deps/glm-src/glm/ext/vector_bool4.hpp:
+
+/usr/include/bits/timesize.h:
+
 _deps/glm-src/glm/ext/vector_float2_precision.hpp:
 
 /usr/include/c++/15.2.1/bits/shared_ptr.h:
@@ -1795,6 +1830,8 @@ _deps/glm-src/glm/ext/matrix_double2x2_precision.hpp:
 
 _deps/glm-src/glm/ext/matrix_double2x2.hpp:
 
+_deps/glm-src/glm/ext/scalar_int_sized.hpp:
+
 _deps/glm-src/glm/detail/type_vec4.hpp:
 
 /usr/include/sys/single_threaded.h:
@@ -1816,8 +1853,6 @@ _deps/glm-src/glm/ext/vector_uint4.hpp:
 _deps/glm-src/glm/detail/compute_vector_relational.hpp:
 
 _deps/glm-src/glm/ext/matrix_float2x4.hpp:
-
-_deps/glm-src/glm/exponential.hpp:
 
 _deps/glm-src/glm/mat4x3.hpp:
 
@@ -1861,7 +1896,7 @@ _deps/glm-src/glm/detail/type_vec1.inl:
 
 _deps/glm-src/glm/ext/matrix_float2x4_precision.hpp:
 
-/usr/include/c++/15.2.1/cstddef:
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/EBO.cpp.o:
 
 _deps/glm-src/glm/ext/matrix_double4x3.hpp:
 
@@ -1881,6 +1916,8 @@ _deps/imgui-src/imconfig.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
+/usr/include/c++/15.2.1/bits/std_thread.h:
+
 /usr/include/bits/types/locale_t.h:
 
 /usr/include/bits/uintn-identity.h:
@@ -1897,6 +1934,8 @@ _deps/imgui-src/imconfig.h:
 
 /usr/include/bits/stdio_lim.h:
 
+/usr/include/bits/types/__mbstate_t.h:
+
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/bits/wordsize.h:
@@ -1904,6 +1943,8 @@ _deps/imgui-src/imconfig.h:
 _deps/glm-src/glm/ext/vector_uint3.hpp:
 
 /usr/include/bits/types/clock_t.h:
+
+src/app/Core/Graphics/Texture/texture.cpp:
 
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
@@ -1929,6 +1970,8 @@ _deps/glm-src/glm/ext/vector_uint4_sized.hpp:
 
 /usr/include/c++/15.2.1/tr1/beta_function.tcc:
 
+src/app/ECS/Systems/DrawSystem.h:
+
 _deps/glm-src/glm/ext/matrix_double2x3_precision.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
@@ -1947,8 +1990,6 @@ _deps/glm-src/glm/ext/matrix_double4x2_precision.hpp:
 
 /usr/include/bits/long-double.h:
 
-src/ECS/Systems/DrawSystem.h:
-
 _deps/glm-src/glm/ext/matrix_transform.inl:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
@@ -1957,9 +1998,9 @@ _deps/glm-src/glm/ext/matrix_transform.inl:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
-/usr/include/bits/types/__FILE.h:
+/usr/include/c++/15.2.1/ratio:
 
-/usr/include/features.h:
+/usr/include/bits/types/__FILE.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
@@ -1991,27 +2032,11 @@ _deps/glm-src/glm/detail/type_vec1.hpp:
 
 /usr/include/bits/wchar.h:
 
-src/Core/Graphics/Shader/shader.cpp:
-
 /usr/include/bits/types/struct___jmp_buf_tag.h:
-
-src/ECS/Systems/ChunkSystem.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/lib/libxcb.so.1:
-
-_deps/glm-src/glm/ext/vector_bool4.hpp:
 
 /usr/include/bits/libc-header-start.h:
 
 _deps/glm-src/glm/ext/matrix_float2x3.hpp:
-
-_deps/glm-src/glm/ext/quaternion_geometric.inl:
-
-/usr/include/c++/15.2.1/backward/binders.h:
-
-/usr/lib/libGLdispatch.so.0:
 
 CMakeFiles/my_app.dir/src/main.cpp.o:
 
@@ -2031,6 +2056,10 @@ _deps/glm-src/glm/ext/vector_int4_sized.hpp:
 
 _deps/glm-src/glm/detail/func_common.inl:
 
+src/app/Core/Graphics/Texture/AssetManager.h:
+
+src/app/Scenes/MenuScene.h:
+
 /usr/include/asm-generic/posix_types.h:
 
 _deps/glm-src/glm/mat4x4.hpp:
@@ -2047,6 +2076,8 @@ _deps/glm-src/glm/mat4x4.hpp:
 
 _deps/glm-src/glm/ext/matrix_float3x4_precision.hpp:
 
+src/app/Core/Player/PlayerInput.h:
+
 _deps/glm-src/glm/detail/type_mat3x4.hpp:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
@@ -2055,11 +2086,15 @@ include/EBO.h:
 
 /usr/include/bits/select.h:
 
+src/app/ECS/Components/TextureComponent.h:
+
 _deps/glm-src/glm/ext/vector_int3.hpp:
 
 _deps/glm-src/glm/ext/quaternion_common.hpp:
 
 /usr/include/c++/15.2.1/bits/ostream.h:
+
+_deps/glm-src/glm/ext/matrix_float2x2.hpp:
 
 /usr/include/bits/math-vector.h:
 
@@ -2085,8 +2120,6 @@ _deps/glm-src/glm/detail/type_mat4x3.hpp:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
-src/Core/Player/PlayerInput.h:
-
 _deps/glm-src/glm/ext/quaternion_common.inl:
 
 /usr/include/alloca.h:
@@ -2096,8 +2129,6 @@ _deps/glm-src/glm/detail/type_mat4x3.inl:
 /usr/include/c++/15.2.1/bits/locale_classes.h:
 
 /usr/include/bits/stdint-least.h:
-
-_deps/glm-src/glm/ext/matrix_float4x4.hpp:
 
 /usr/include/asm-generic/bitsperlong.h:
 
@@ -2131,6 +2162,8 @@ _deps/glm-src/glm/ext/vector_uint1_sized.hpp:
 
 /usr/include/strings.h:
 
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Texture/texture.cpp.o:
+
 _deps/glm-src/glm/ext/matrix_double2x4.hpp:
 
 _deps/glm-src/glm/ext/vector_float3_precision.hpp:
@@ -2145,6 +2178,16 @@ _deps/glm-src/glm/gtc/constants.inl:
 
 _deps/glm-src/glm/ext/matrix_double4x3_precision.hpp:
 
+_deps/glm-src/glm/ext/vector_bool2_precision.hpp:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/15.2.1/bits/utility.h:
+
+/usr/include/linux/posix_types.h:
+
+_deps/glm-src/glm/mat3x2.hpp:
+
 _deps/glm-src/glm/detail/type_mat2x3.hpp:
 
 _deps/glm-src/glm/detail/setup.hpp:
@@ -2157,17 +2200,13 @@ _deps/glm-src/glm/detail/type_mat3x2.inl:
 
 /usr/include/assert.h:
 
+/usr/lib/libGLX.so:
+
+_deps/glm-src/glm/ext/vector_int2.hpp:
+
 _deps/glm-src/glm/mat3x4.hpp:
 
-_deps/glm-src/glm/ext/vector_bool2_precision.hpp:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/c++/15.2.1/bits/utility.h:
-
-/usr/include/linux/posix_types.h:
-
-_deps/glm-src/glm/mat3x2.hpp:
+src/app/Core/Graphics/Shader/shader.cpp:
 
 /usr/include/bits/endianness.h:
 
@@ -2182,8 +2221,6 @@ _deps/glm-src/glm/ext/matrix_double3x2.hpp:
 /usr/include/bits/posix1_lim.h:
 
 /usr/include/wchar.h:
-
-src/ECS/Components/Position.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -2201,9 +2238,13 @@ _deps/glm-src/glm/ext/matrix_double3x4_precision.hpp:
 
 _deps/glm-src/glm/ext/matrix_double4x4.hpp:
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VAO.cpp.o:
-
 _deps/glm-src/glm/ext/matrix_double4x4_precision.hpp:
+
+_deps/glm-src/glm/detail/type_vec2.hpp:
+
+_deps/glm-src/glm/detail/type_mat2x3.inl:
+
+/usr/include/string.h:
 
 _deps/glm-src/glm/packing.hpp:
 
@@ -2233,6 +2274,8 @@ _deps/glm-src/glm/ext/matrix_float3x2.hpp:
 
 _deps/glm-src/glm/ext/matrix_float3x2_precision.hpp:
 
+/usr/include/c++/15.2.1/bits/chrono.h:
+
 /usr/include/sys/select.h:
 
 /usr/include/c++/15.2.1/bits/stl_function.h:
@@ -2250,6 +2293,8 @@ _deps/glm-src/glm/ext/matrix_float3x3_precision.hpp:
 _deps/glm-src/glm/ext/matrix_float3x4.hpp:
 
 /usr/include/bits/posix2_lim.h:
+
+src/app/Core/Graphics/Vertex/VBO.cpp:
 
 /usr/include/bits/byteswap.h:
 
@@ -2269,6 +2314,10 @@ _deps/glm-src/glm/vector_relational.hpp:
 
 _deps/glm-src/glm/detail/_vectorize.hpp:
 
+_deps/glm-src/glm/exponential.hpp:
+
+src/app/Core/Graphics/Draw/SpriteBatch.h:
+
 /usr/include/c++/15.2.1/bits/hashtable.h:
 
 _deps/glm-src/glm/ext/vector_uint3_sized.hpp:
@@ -2287,6 +2336,10 @@ _deps/glm-src/glm/detail/compute_common.hpp:
 
 /usr/include/bits/time.h:
 
+_deps/glm-src/glm/ext/matrix_float4x4.hpp:
+
+src/app/ECS/Components/Context.h:
+
 _deps/glm-src/glm/ext/quaternion_trigonometric.inl:
 
 /usr/include/asm/posix_types_64.h:
@@ -2294,6 +2347,10 @@ _deps/glm-src/glm/ext/quaternion_trigonometric.inl:
 /usr/include/bits/types.h:
 
 /usr/include/c++/15.2.1/bits/locale_facets.tcc:
+
+/usr/lib/libc.so.6:
+
+/usr/include/bits/fp-fast.h:
 
 /usr/include/sched.h:
 
@@ -2315,6 +2372,8 @@ _deps/glm-src/glm/mat2x2.hpp:
 
 /usr/include/bits/timex.h:
 
+/usr/include/c++/15.2.1/ctime:
+
 /usr/include/bits/types/error_t.h:
 
 /usr/include/bits/types/mbstate_t.h:
@@ -2328,10 +2387,6 @@ _deps/glm-src/glm/detail/type_vec2.inl:
 _deps/glm-src/glm/detail/type_mat4x4.hpp:
 
 /usr/include/bits/types/struct_sched_param.h:
-
-_deps/glm-src/glm/ext/vector_int2.hpp:
-
-/usr/lib/libGLX.so:
 
 _deps/glm-src/glm/geometric.hpp:
 
@@ -2421,10 +2476,6 @@ _deps/glm-src/glm/ext/quaternion_trigonometric.hpp:
 
 /usr/include/c++/15.2.1/bits/localefwd.h:
 
-_deps/glm-src/glm/ext/matrix_float2x2.hpp:
-
-src/Core/Scenes/Scene.h:
-
 /usr/include/c++/15.2.1/bits/memory_resource.h:
 
 _deps/glm-src/glm/mat2x4.hpp:
@@ -2451,7 +2502,9 @@ src/main.cpp:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Texture/texture.cpp.o:
+/usr/include/features.h:
+
+/usr/include/c++/15.2.1/chrono:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
@@ -2485,19 +2538,13 @@ _deps/glm-src/glm/trigonometric.hpp:
 
 /usr/include/c++/15.2.1/cstdlib:
 
-_deps/glm-src/glm/detail/type_vec2.hpp:
-
-_deps/glm-src/glm/detail/type_mat2x3.inl:
-
-/usr/include/string.h:
-
-src/Core/Scenes/SceneManager.h:
-
 /usr/include/c++/15.2.1/cstring:
 
 _deps/glm-src/glm/ext/matrix_double3x4.hpp:
 
 /usr/include/c++/15.2.1/cwchar:
+
+src/app/Core/Scenes/Scene.h:
 
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
@@ -2516,6 +2563,10 @@ _deps/glm-src/glm/ext/matrix_projection.inl:
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
+
+_deps/glm-src/glm/ext/quaternion_geometric.inl:
+
+/usr/include/c++/15.2.1/bits/this_thread_sleep.h:
 
 /usr/include/c++/15.2.1/fstream:
 
@@ -2563,6 +2614,8 @@ _deps/glm-src/glm/ext/matrix_projection.inl:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
+/usr/include/c++/15.2.1/bits/parse_numbers.h:
+
 _deps/glm-src/glm/integer.hpp:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
@@ -2593,6 +2646,12 @@ _deps/glm-src/glm/detail/_fixes.hpp:
 
 /usr/include/linux/sched/types.h:
 
+/usr/lib/libmvec.so.1:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/linux/stddef.h:
+
 /usr/include/locale.h:
 
 /usr/lib/libstdc++.so:
@@ -2601,19 +2660,15 @@ _deps/glm-src/glm/detail/_fixes.hpp:
 
 _deps/stb-src/stb_image.h:
 
+/usr/include/c++/15.2.1/cstddef:
+
+src/app/Core/Graphics/Vertex/VAO.cpp:
+
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/c++/15.2.1/bits/erase_if.h:
 
-/usr/lib/libXau.so.6:
-
-src/Core/Graphics/Vertex/EBO.cpp:
-
-src/Core/Graphics/Vertex/VAO.cpp:
-
 include/VAO.h:
-
-src/Core/Graphics/Vertex/VBO.cpp:
 
 _deps/ecs-src/ECS.h:
 
@@ -2627,23 +2682,17 @@ _deps/imgui-src/backends/imgui_impl_opengl3.h:
 
 _deps/imgui-src/imgui.h:
 
-src/Core/Graphics/Draw/Camera.h:
+src/app/ECS/Systems/ChunkSystem.h:
 
-src/Core/Graphics/Draw/SpriteBatch.h:
+src/app/Resources/TextureData.h:
 
-_deps/glm-src/glm/ext/scalar_int_sized.hpp:
+src/server/ECS/Systems/ServerSystem.h:
 
-src/Core/Graphics/Texture/AssetManager.h:
+src/server/ServerMachine.h:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/lib/crti.o:
 
-src/ECS/Components/Size.h:
-
-src/ECS/Components/TextureComponent.h:
-
-_deps/glm-src/glm/detail/func_matrix.inl:
-
-src/Scenes/MenuScene.h:
+src/app/ECS/Components/Position.h:
 
 /usr/include/c++/15.2.1/algorithm:
 
@@ -2655,9 +2704,7 @@ _deps/glm-src/glm/ext/matrix_float4x3_precision.hpp:
 
 /usr/include/c++/15.2.1/bits/algorithmfwd.h:
 
-CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o:
-
-/usr/lib/librt.a:
+/usr/include/c++/15.2.1/atomic:
 
 /usr/include/c++/15.2.1/backward/auto_ptr.h:
 
@@ -2681,8 +2728,6 @@ CMakeFiles/my_app.dir/src/Core/Graphics/Vertex/VBO.cpp.o:
 
 /usr/include/c++/15.2.1/functional:
 
-src/ECS/Components/Context.h:
-
 /usr/include/c++/15.2.1/memory:
 
 _deps/glm-src/glm/gtc/type_ptr.hpp:
@@ -2691,15 +2736,23 @@ _deps/glm-src/glm/ext/vector_int3_sized.hpp:
 
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
+CMakeFiles/my_app.dir/src/app/Core/Graphics/Vertex/VBO.cpp.o:
+
+src/app/Core/Scenes/SceneManager.h:
+
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
+
+_deps/glm-src/glm/ext/vector_float4.hpp:
+
+/usr/include/c++/15.2.1/thread:
+
+src/app/ECS/Components/Size.h:
 
 /usr/include/c++/15.2.1/typeindex:
 
 /usr/include/c++/15.2.1/unordered_map:
 
 /usr/lib/Scrt1.o:
-
-/usr/lib/crti.o:
 
 /usr/lib/libm.so:
 
@@ -2708,23 +2761,3 @@ libimgui.a:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 /usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/libOpenGL.so:
-
-/usr/lib/libX11.so.6:
-
-/usr/lib/libXdmcp.so.6:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/lib/libc.so.6:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/lib/libm.so.6:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/lib/libmvec.so.1:

@@ -5,11 +5,11 @@ include(FetchContent)
 #Application
 add_executable(my_app 
   src/main.cpp
-  src/Core/Graphics/Vertex/EBO.cpp
-  src/Core/Graphics/Vertex/VBO.cpp
-  src/Core/Graphics/Vertex/VAO.cpp
-  src/Core/Graphics/Shader/shader.cpp
-  src/Core/Graphics/Texture/texture.cpp
+  src/app/Core/Graphics/Vertex/EBO.cpp
+  src/app/Core/Graphics/Vertex/VBO.cpp
+  src/app/Core/Graphics/Vertex/VAO.cpp
+  src/app/Core/Graphics/Shader/shader.cpp
+  src/app/Core/Graphics/Texture/texture.cpp
   _deps_external/glad/src/glad.c
 )
 #Downloads
