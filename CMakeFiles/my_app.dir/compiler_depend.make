@@ -1187,17 +1187,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/glm-src/glm/fwd.hpp \
   _deps/glm-src/glm/glm.hpp \
   _deps/glm-src/glm/detail/setup.hpp \
-  _deps/glm-src/glm/ext/scalar_constants.hpp \
-  _deps/glm-src/glm/ext/scalar_constants.inl \
-  _deps/glm-src/glm/gtc/constants.hpp \
-  _deps/glm-src/glm/gtc/constants.inl \
-  _deps/glm-src/glm/ext/matrix_clip_space.hpp \
-  _deps/glm-src/glm/ext/matrix_clip_space.inl \
-  _deps/glm-src/glm/ext/matrix_projection.hpp \
-  _deps/glm-src/glm/ext/matrix_projection.inl \
-  _deps/glm-src/glm/ext/matrix_transform.hpp \
-  _deps/glm-src/glm/ext/matrix_transform.inl \
-  _deps/glm-src/glm/detail/setup.hpp \
   _deps/glm-src/glm/ext/quaternion_relational.hpp \
   _deps/glm-src/glm/ext/quaternion_relational.inl \
   _deps/glm-src/glm/detail/setup.hpp \
@@ -1228,13 +1217,24 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/glm-src/glm/ext/vector_relational.inl \
   _deps/glm-src/glm/ext/vector_uint1.hpp \
   _deps/glm-src/glm/ext/vector_uint1_sized.hpp \
+  _deps/glm-src/glm/detail/setup.hpp \
+  _deps/glm-src/glm/ext/matrix_clip_space.hpp \
+  _deps/glm-src/glm/ext/matrix_clip_space.inl \
+  _deps/glm-src/glm/ext/matrix_projection.hpp \
+  _deps/glm-src/glm/ext/matrix_projection.inl \
+  _deps/glm-src/glm/ext/matrix_transform.hpp \
+  _deps/glm-src/glm/ext/matrix_transform.inl \
+  _deps/glm-src/glm/ext/scalar_constants.hpp \
+  _deps/glm-src/glm/ext/scalar_constants.inl \
+  _deps/glm-src/glm/gtc/constants.hpp \
+  _deps/glm-src/glm/gtc/constants.inl \
+  _deps/glm-src/glm/gtc/matrix_transform.hpp \
+  _deps/glm-src/glm/gtc/matrix_transform.inl \
   _deps/glm-src/glm/gtc/epsilon.hpp \
   _deps/glm-src/glm/gtc/epsilon.inl \
   _deps/glm-src/glm/gtc/quaternion.hpp \
   _deps/glm-src/glm/gtc/quaternion.inl \
   _deps/glm-src/glm/gtc/vec1.hpp \
-  _deps/glm-src/glm/gtc/matrix_transform.hpp \
-  _deps/glm-src/glm/gtc/matrix_transform.inl \
   _deps/glm-src/glm/gtc/type_ptr.hpp \
   _deps/glm-src/glm/gtc/type_ptr.inl \
   _deps/glm-src/glm/integer.hpp \
@@ -1251,7 +1251,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   _deps/stb-src/stb_image.h \
   _deps_external/glad/include/KHR/khrplatform.h \
   _deps_external/glad/include/glad/glad.h \
-  include/EBO.h \
   include/VAO.h \
   include/VBO.h \
   include/shader.h \
@@ -1264,7 +1263,11 @@ CMakeFiles/my_app.dir/src/main.cpp.o: src/main.cpp \
   src/Core/Scenes/SceneManager.h \
   src/ECS/Components/Context.h \
   src/ECS/Components/Position.h \
+  src/ECS/Components/Size.h \
+  src/ECS/Components/TextureComponent.h \
+  src/ECS/Systems/ChunkSystem.h \
   src/ECS/Systems/DrawSystem.h \
+  src/Resources/TextureData.h \
   src/Scenes/MenuScene.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1624,6 +1627,10 @@ CMakeFiles/my_app.dir/_deps_external/glad/src/glad.c.o:
 
 /usr/lib32/libXdmcp.so.6:
 
+/usr/lib32/libXau.so.6:
+
+/usr/lib32/libGLdispatch.so.0:
+
 /usr/include/asm-generic/int-ll64.h:
 
 _deps/glm-src/glm/ext/vector_int2_sized.hpp:
@@ -1677,6 +1684,8 @@ _deps/glm-src/glm/ext/vector_bool1_precision.hpp:
 _deps/glm-src/glm/ext/vector_bool1.hpp:
 
 _deps/glm-src/glm/matrix.hpp:
+
+src/Resources/TextureData.h:
 
 _deps/glm-src/glm/ext/quaternion_float_precision.hpp:
 
@@ -1888,8 +1897,6 @@ _deps/imgui-src/imconfig.h:
 
 /usr/include/bits/stdio_lim.h:
 
-/usr/include/bits/types/__mbstate_t.h:
-
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/bits/wordsize.h:
@@ -1987,6 +1994,8 @@ _deps/glm-src/glm/detail/type_vec1.hpp:
 src/Core/Graphics/Shader/shader.cpp:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
+
+src/ECS/Systems/ChunkSystem.h:
 
 /usr/include/bits/timesize.h:
 
@@ -2626,6 +2635,12 @@ _deps/glm-src/glm/ext/scalar_int_sized.hpp:
 
 src/Core/Graphics/Texture/AssetManager.h:
 
+/usr/include/bits/types/__mbstate_t.h:
+
+src/ECS/Components/Size.h:
+
+src/ECS/Components/TextureComponent.h:
+
 _deps/glm-src/glm/detail/func_matrix.inl:
 
 src/Scenes/MenuScene.h:
@@ -2713,7 +2728,3 @@ libimgui.a:
 /usr/include/linux/stddef.h:
 
 /usr/lib/libmvec.so.1:
-
-/usr/lib32/libGLdispatch.so.0:
-
-/usr/lib32/libXau.so.6:

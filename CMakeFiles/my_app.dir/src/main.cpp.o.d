@@ -185,11 +185,14 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/typeindex \
  /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h \
  /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h \
- /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h \
- /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/ostream \
- /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
- /usr/include/c++/15.2.1/bits/basic_ios.h \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Size.h \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/TextureComponent.h \
+ /home/vladimir/Documents/CPlus/Game/include/texture.h \
+ /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h \
+ /home/vladimir/Documents/CPlus/Game/include/shader.h \
+ /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/istream \
+ /usr/include/c++/15.2.1/ios /usr/include/c++/15.2.1/bits/basic_ios.h \
  /usr/include/c++/15.2.1/bits/locale_facets.h \
  /usr/include/c++/15.2.1/cwctype /usr/include/wctype.h \
  /usr/include/bits/wctype-wchar.h \
@@ -197,10 +200,15 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
- /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
+ /usr/include/c++/15.2.1/ostream /usr/include/c++/15.2.1/bits/ostream.h \
+ /usr/include/c++/15.2.1/bits/ostream.tcc \
  /usr/include/c++/15.2.1/bits/istream.tcc \
- /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Player/PlayerInput.h \
+ /usr/include/c++/15.2.1/bits/codecvt.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
+ /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /usr/include/c++/15.2.1/iostream \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/glm.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath /usr/include/math.h \
@@ -370,29 +378,21 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/type_half.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/integer.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/func_integer.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/../gtc/constants.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_projection.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_clip_space.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.hpp \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../ext/matrix_transform.inl \
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl \
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h \
- /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h \
- /home/vladimir/Documents/CPlus/Game/include/shader.h \
- /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
- /usr/include/c++/15.2.1/bits/sstream.tcc \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/quaternion.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/constants.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../gtc/matrix_transform.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_relational.inl \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
@@ -429,15 +429,19 @@ CMakeFiles/my_app.dir/src/main.cpp.o: \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.inl \
- /home/vladimir/Documents/CPlus/Game/include/texture.h \
- /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h \
- /usr/include/c++/15.2.1/stdlib.h \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/Scene.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Player/PlayerInput.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/Camera.h \
+ /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Draw/SpriteBatch.h \
  /home/vladimir/Documents/CPlus/Game/include/shader.h \
  /home/vladimir/Documents/CPlus/Game/include/VAO.h \
  /home/vladimir/Documents/CPlus/Game/include/VBO.h \
- /home/vladimir/Documents/CPlus/Game/include/EBO.h \
  /home/vladimir/Documents/CPlus/Game/src/Core/Graphics/Texture/AssetManager.h \
+ /home/vladimir/Documents/CPlus/Game/src/Resources/TextureData.h \
  /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imgui.h \
  /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/imconfig.h \
  /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_glfw.h \
- /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_opengl3.h
+ /home/vladimir/Documents/CPlus/Game/_deps/imgui-src/backends/imgui_impl_opengl3.h \
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/ChunkSystem.h

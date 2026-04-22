@@ -2,9 +2,13 @@
 
 #include <ECS.h>
 #include <ECS/Components/Position.h>
+#include <ECS/Components/Size.h>
+#include <ECS/Components/TextureComponent.h>
 #include <ECS/Components/Context.h>
 
 #include <texture.h>
+#include <Resources/TextureData.h>
+#include <Core/Player/PlayerInput.h>
 #include <Core/Graphics/Texture/AssetManager.h>
 #include <Core/Graphics/Draw/SpriteBatch.h>
 #include <Core/Graphics/Draw/Camera.h>
@@ -25,28 +29,24 @@ class DrawSystem : public EntitySystem
 private:
     Context* context;
     Camera& camera;
+    PlayerInput& playerInput;
     AssetManager& assetManager;
     SpriteBatch& spriteBatch;
-    Texture* texture = nullptr;
 public:    
       DrawSystem(Context* context) 
         : context(context)
         , camera(context->camera)
         , spriteBatch(context->spriteBatch)
         , assetManager(context->assetManager)
+        , playerInput(context->playerInput)
         {}
     void configure(World* world)
 	{
-        assetManager.loadTexture("gravel", "resources/textures/gravel_001_basecolor.jpg");
-        assetManager.loadTexture("wall", "resources/textures/concrete_wall_016_basecolor.png");
-
-        texture = &assetManager.getTexture("gravel");
-
-        for(int x = 0; x < 8; x++){
-            for(int y = 0; y < 8; y++){
-                Entity* ent = world->create();
-                ent->assign<Position>(x * 500, y * 500);
-            }
+        for (int i = 0; i < TextureData::COUNT; i++) {
+            assetManager.loadTexture(
+                keyTexture(static_cast<TextureData>(i)), 
+                texturePaths[i]
+            );
         }
 	}
 
@@ -65,13 +65,21 @@ public:
         ImGui::Text("Window Size: %.0f x %.0f", io.DisplaySize.x, io.DisplaySize.y);
         ImGui::End();
 
-        camera.move(context->playerInput.move_vector2);
+        camera.move(playerInput.move_vector2);
         camera.update();
 
         spriteBatch.view = camera.getViewMatrix();
         spriteBatch.begin();
-        world->each<Position>([&](Entity* ent, ComponentHandle<Position> position) {
-            spriteBatch.drawTexture(*texture, position->x, position->y, 500, 500);
+        world->each<TextureComponent, Position, Size>([&](Entity* ent, 
+            ComponentHandle<TextureComponent> textureComponent, 
+            ComponentHandle<Position> position,
+            ComponentHandle<Size> size) {
+    
+            spriteBatch.drawTexture(
+                *textureComponent->texture,
+                position->x, position->y, 
+                size->w, size->h
+            );
         });
         spriteBatch.end();
     }

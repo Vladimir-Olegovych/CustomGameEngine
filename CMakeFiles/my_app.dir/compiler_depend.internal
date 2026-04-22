@@ -1194,17 +1194,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/fwd.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/glm.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.inl
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/quaternion_relational.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/quaternion_relational.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
@@ -1235,13 +1224,24 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_relational.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_uint1.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/vector_uint1_sized.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/detail/setup.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_clip_space.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_projection.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/matrix_transform.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/ext/scalar_constants.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/constants.inl
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp
+ /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/epsilon.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/epsilon.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/quaternion.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/quaternion.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/vec1.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.hpp
- /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/matrix_transform.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.hpp
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/gtc/type_ptr.inl
  /home/vladimir/Documents/CPlus/Game/_deps/glm-src/glm/integer.hpp
@@ -1258,7 +1258,6 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/_deps/stb-src/stb_image.h
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/KHR/khrplatform.h
  /home/vladimir/Documents/CPlus/Game/_deps_external/glad/include/glad/glad.h
- /home/vladimir/Documents/CPlus/Game/include/EBO.h
  /home/vladimir/Documents/CPlus/Game/include/VAO.h
  /home/vladimir/Documents/CPlus/Game/include/VBO.h
  /home/vladimir/Documents/CPlus/Game/include/shader.h
@@ -1271,7 +1270,11 @@ CMakeFiles/my_app.dir/src/main.cpp.o
  /home/vladimir/Documents/CPlus/Game/src/Core/Scenes/SceneManager.h
  /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Context.h
  /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Position.h
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/Size.h
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Components/TextureComponent.h
+ /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/ChunkSystem.h
  /home/vladimir/Documents/CPlus/Game/src/ECS/Systems/DrawSystem.h
+ /home/vladimir/Documents/CPlus/Game/src/Resources/TextureData.h
  /home/vladimir/Documents/CPlus/Game/src/Scenes/MenuScene.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h

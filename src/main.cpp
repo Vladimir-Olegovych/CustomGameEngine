@@ -26,7 +26,7 @@ int main() {
     GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
-    GLFWwindow* window = glfwCreateWindow(mode->width, mode->height, "Scene Demo", monitor, nullptr);
+    GLFWwindow* window = glfwCreateWindow(mode->width, mode->height, "Factorio 2", monitor, nullptr);
     if (!window) { glfwTerminate(); return -1; }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
